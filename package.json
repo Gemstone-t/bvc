@@ -1,0 +1,35 @@
+{
+  "name": "BVR_Summer_Camp",
+  "version": "1.1.1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.2",
+    "foundation-sites": "latest",
+    "jquery": ">=3.6.0",
+    "motion-ui": "latest",
+    "what-input": ">=5.2.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.28",
+    "sass": "^1.66.0"
+  },
+  "private": true,
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
