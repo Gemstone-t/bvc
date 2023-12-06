@@ -41,12 +41,14 @@ $beaverLightOrange: #FBF5EF;
 $beaverWhite: #FFFFFF;
 
 $animationSpeed: 40s;
-$photoSize: 20vw;
+$photoSize: 280px;
 
 body {
     font-size: 20px;
     background-color: $beaverLightOrange !important;
     font-family: satoshi-Bold, sans-serif;
+    width: 1400px;
+    margin: 0 auto !important;
 }
 
 // button {
@@ -163,7 +165,7 @@ p.call-out{
 .announcement-bar {
     width: 100%;
     height: 70px;
-    padding: 20px 5vw 0 5vw;
+    padding: 20px 70px 20px 70px;
     background-color: $beaverBlue;
     color: $beaverWhite;
     a {
@@ -173,7 +175,7 @@ p.call-out{
 }
 
 .top-page {
-    padding: 2vw 5vw 0 5vw;
+    padding: 20px 70px 20px 70px;
 
     .utility-menu {
         display: flex;
@@ -188,11 +190,11 @@ p.call-out{
     .background{
         position: absolute;
         top: 70px;
-        left: 0;
         z-index: -1;
         img {
-            width:100vw;
+            width:1400px;
         }
+        margin-left: -70px;
     }
 
     .nav-bar{
@@ -288,7 +290,7 @@ p.call-out{
     }
 
     .search-input{
-        margin-top: 0.5vw;
+        margin-top: 20px;
         display: none;
         input{
             height: 50px;
@@ -307,15 +309,15 @@ p.call-out{
     }
 
     .text-content{
-        margin: 20vw 10vw 0 10vw;
-        padding: 2vw;
+        margin: 300px 150px 0 150px;
+        padding: 50px;
         background-color: $beaverWhite;
         color: $beaverBlue;
         h1 {
-            margin: 1vw 0;
+            margin: 10px 0;
         }
         p {
-            margin: 1vw 0;
+            margin: 10px 0;
         }
         .grade-choose {
             margin: 0;
@@ -340,12 +342,12 @@ p.call-out{
 
 .medium-page{
     .photo-slider{
-        margin-top: 1vw;
+        margin-top: 10px;
         .slider {
             align-items: center;
             display: flex;
             height: $photoSize;
-            width: 100;
+            width: 100%;
             justify-content: center;
         }
     
@@ -405,35 +407,36 @@ p.call-out{
         display: grid;
         grid-template-columns: 15% auto 15%;
         .left-pic{
-            margin-top: 10vw;
+            margin-top: 150px;
             img{
-                width: 20vw;
+                width: 300px;
             }
         }
         .right-pic{
-            margin-top: 18vw;
+            margin-top: 300px;
             display: flex;
             flex-direction: row-reverse;
             z-index: -1;
             img{
-                width: 20vw;
-                height: 27vw;
+                width: 300px;
+                height: 480px;
             }
         }
         
         .overview-panel{
-            padding: 3vw 5vw 3vw 5vw;
+            padding: 30px;
             background-color: $beaverWhite;
             color: $beaverBlue;
             
             .link-btn {
                 a {
-                    margin-right: 1vw;
+                    margin-right: 10px;
                     color: $beaverBlue;
                     text-decoration: underline;
                 }
                 button {
-                    margin-left: 1vw;
+                    margin: 0 10px 0 0;
+
                     background-color: $beaverOrange;
                     color: $beaverBlue;
                 }
@@ -441,7 +444,7 @@ p.call-out{
         }
 
         .reg-info-panel{
-            padding: 3vw 4vw 3vw 4vw;
+            padding: 30px;
             background-color: $beaverBlue;
             color: $beaverWhite;
         }
@@ -450,21 +453,21 @@ p.call-out{
 }
 
 .bottom-page {
-    margin-top: 1vw;
+    margin-top: 10px;
 
     .camp-program-blocks{
         .general-camp{
             .panel-body{
-                padding-bottom: 10vw;
+                padding-bottom: 130px;
             }
         }
         .special-camp{
             .panel-body{
-                padding-bottom: 3vw;
+                padding-bottom: 50px;
             }
         }
         .describe{
-            padding: 2vw 0;
+            padding: 30px 0;
             background-color: $beaverWhite;
             color: $beaverBlue;
 
@@ -476,47 +479,47 @@ p.call-out{
         }
         .panel-body{
             background-color: $beaverBlue;
-            padding-top: 2vw;
-            padding-left: 10vw;
-            padding-right: 10vw;
+            padding-top: 55px;
+            padding-left: 200px;
+            padding-right: 200px;
             .card {
                 margin: 0;
-                border: 0.3vw solid $beaverBlue;
+                border: 5px solid $beaverBlue;
                 background-color: $beaverWhite;
                 h3{
-                    margin: 1vw;
+                    margin: 10px;
                 }
                 p {
-                    margin: 1vw;
+                    margin: 10px;
                 }
             }
             p.call-out {
-                margin: 2vw;
+                margin: 40px;
                 color:$beaverYellow;
             }
         }
     }
     
     .camp-stories-quote-block{
-        margin-top: 2vw;
+        margin-top: 30px;
         .panel {
-            margin-top: 1vw;
+            margin-top: 10px;
             .camp-title{
                 display: flex;
                 flex-direction: column-reverse;
-                padding: 0 3.5vw;
+                padding: 0 52px;
                 background-color: $beaverBlue;
             }
             .pic-panel{
                 background-color: $beaverBlue;
                 img {
-                    border: 0.3vw solid $beaverBlue;
+                    border: 5px solid $beaverBlue;
                     width: 100%;
                 }
             }
             .describe{
                 background-color: $beaverWhite;
-                padding: 0 5vw;
+                padding: 0 70px;
             }
         }
         .left{
@@ -552,9 +555,9 @@ p.call-out{
     }
 
     .storytelling-blocks{
-        margin: 1vw 0;
+        margin: 20px 0;
         background-color: $beaverYellow;
-        padding: 2vw 5vw;
+        padding: 40px 70px;
         .control-icons {
             display: flex;
             i {
@@ -566,7 +569,7 @@ p.call-out{
 }
 
 footer {
-    padding: 0 5vw 2vw 5vw;
+    padding: 0 70px 30px 70px;
     background-color: $beaverBlue;
     h4,p,a,label{
         color: $beaverWhite;
@@ -578,21 +581,21 @@ footer {
         text-decoration: underline;
     }
     .footer-left {
-        padding-right: 3vw;
+        padding-right: 50px;
         p {
-            margin: 3vw 0 6vw 0;
+            margin: 50px 0 80px 0;
         }
         label{
-            margin-top: 3vw;
+            margin-top: 50px;
         }
     }
 
     .footer-right {
-        margin-top: 2vw;
+        margin-top: 30px;
         text-align: right;
         .link-btn{
             display: inline;
-            a,button{margin: 2vw}
+            a,button{margin: 30px}
             .yellow{
                 background-color: $beaverYellow;
             }
@@ -602,16 +605,16 @@ footer {
         }
         .link-group{
             .link-list {
-                margin-top: 3vw;
+                margin-top: 50px;
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
                 a{
-                    margin-top: 1vw;
+                    margin-top: 15px;
                 }
                 img{
-                    margin-top: 1vw;
-                    padding-right: 1vw;
+                    margin-top: 15px;
+                    padding-right: 15px;
                 }
                 img:hover{
                     cursor: pointer;
@@ -698,8 +701,8 @@ footer {
     }
     .top-page{
         .text-content{
-            margin: 8vw 0 0 0;
-            padding: 2vw;
+            margin: 100px 0 0 0;
+            padding: 30px;
         }
         .background img{
             width: 100%;
