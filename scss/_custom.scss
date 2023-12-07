@@ -19,7 +19,7 @@
 } 
 
 @font-face {
-    font-family: satoshi-Blod;
+    font-family: satoshi-Bold;
     src: url("/css/font/Satoshi-Bold.otf");
 } 
 
@@ -44,9 +44,7 @@ $animationSpeed: 40s;
 $photoSize: 280px;
 
 body {
-    font-size: 20px;
     background-color: $beaverLightOrange !important;
-    font-family: satoshi-Bold, sans-serif;
     width: 1400px;
     margin: 0 auto !important;
 }
@@ -57,6 +55,13 @@ body {
 
 img {
     max-width: 100vw !important;
+}
+
+i.bi-bold::before{
+    font-weight: 1000!important;
+}
+a.nav-link, a.utility-nav, a, label, button, select, text{
+    font-family: satoshi-Bold, sans-serif !important;
 }
 
 h1,h2,h3,h4,button{
@@ -210,8 +215,6 @@ p.call-out{
         padding: 0;
         background-color: $beaverWhite;
 
-        
-        
         .toggle,
         [id^=drop] {
             display: none;
@@ -232,7 +235,7 @@ p.call-out{
         .menu {
             float: left;
             padding:0;
-            margin:0.5vw 0 0 0;
+            margin:10px 0 0 0;
             list-style: none;
             position: relative;
             li {
@@ -246,12 +249,13 @@ p.call-out{
             ul {
                 display: none;
                 position: absolute; 
-                top: 60px; 
+                top: 55px; 
             }
             li:hover > ul {
                 display:inherit;
                 list-style-type: none;
                 margin: 0;
+                border-bottom: 3px solid $beaverBlue;
             }
             ul li {
                 float:none;
@@ -266,7 +270,7 @@ p.call-out{
         }
         a {
             display: block;
-            padding: 14px 20px;  
+            padding: 10px 20px;  
             color: $beaverBlue;
             text-decoration:none;
         }
@@ -301,6 +305,10 @@ p.call-out{
             width: 70px;
             background-color: $beaverBlue;
         }
+    }
+    .search-line{
+        position: absolute;
+        width: 1260px;
     }
     #chk-search{ display: none;}
     #chk-search:checked + div {
@@ -595,7 +603,7 @@ footer {
         text-align: right;
         .link-btn{
             display: inline;
-            a,button{margin: 30px}
+            a,button{margin: 10px}
             .yellow{
                 background-color: $beaverYellow;
             }
@@ -636,7 +644,11 @@ footer {
 
 // Mobile scss 
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 767px){
+
+    body{
+        width: 375px;
+    }
 
     .announcement-bar{ display: none !important;}
     .top-page{
