@@ -11,6 +11,7 @@
     "node": ">=16.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "bootstrap-icons": "^1.11.2",
     "foundation-sites": "latest",
     "jquery": ">=3.6.0",

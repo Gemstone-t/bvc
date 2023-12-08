@@ -5,33 +5,33 @@
 
 @font-face {
     font-family: pilcrow-Medium;
-    src: url("/css/font/Pilcrow-Medium-BF64dd8808de63a.otf");
+    src: url("/css/font/PilcrowRounded-Medium.ttf");
 } 
 
 @font-face {
     font-family: pilcrow-Semibold;
-    src: url("/css/font/Pilcrow-Semibold-BF64dd8808cf0c5.otf");
+    src: url("/css/font/PilcrowRounded-Semibold.ttf");
 } 
 
 @font-face {
     font-family: satoshi-Black;
-    src: url("/css/font/Satoshi-Black.otf");
+    src: url("/css/font/Satoshi-Black.ttf");
 } 
 
 @font-face {
     font-family: satoshi-Bold;
-    src: url("/css/font/Satoshi-Bold.otf");
+    src: url("/css/font/Satoshi-Bold.ttf");
 } 
 
 
 @font-face {
     font-family: satoshi-Medium;
-    src: url("/css/font/Satoshi-Medium.otf");
+    src: url("/css/font/Satoshi-Medium.ttf");
 } 
 
 @font-face {
     font-family: tanker-Regular;
-    src: url("/css/font/Tanker-Regular.otf");
+    src: url("/css/font/Tanker-Regular.ttf");
 } 
 
 $beaverBlue: #071C2C;
@@ -40,13 +40,14 @@ $beaverYellow: #FBE600;
 $beaverLightOrange: #FBF5EF;
 $beaverWhite: #FFFFFF;
 
-$animationSpeed: 40s;
-$photoSize: 280px;
+$photoSize: rem-calc(280px);
+$global-margin: rem-calc(10px);
 
 body {
     background-color: $beaverLightOrange !important;
-    width: 1400px;
+    // width: 1400px;
     margin: 0 auto !important;
+    overflow-x: hidden;
 }
 
 // button {
@@ -89,80 +90,80 @@ footer label{
 }
 
 h1 {
-    font-size: 54px!important;
-    line-height: 60px!important;
+    font-size: rem-calc(54px)!important;
+    line-height: rem-calc(60px)!important;
 }
 
 h2,
 h2.alt{
-    font-size: 46px!important;
-    line-height: 48px!important;
+    font-size: rem-calc(46px);
+    line-height: rem-calc(48px);
 }
 
 h3{
-    font-size: 30px!important;
-    line-height: 32px!important;
+    font-size: rem-calc(30px);
+    line-height: rem-calc(32px);
 }
 h4{
-    font-size: 23px!important;
-    line-height: 24px!important;
+    font-size: rem-calc(23px);
+    line-height: rem-calc(24px);
 }
 
 p.XXL{
-    font-size: 50px!important;
-    line-height: 65px!important;
+    font-size: rem-calc(50px);
+    line-height: rem-calc(65px);
 }
   
 p.XL {
-    font-size: 26px!important;
-    line-height: 32px!important;
+    font-size: rem-calc(26px);
+    line-height: rem-calc(32px);
 }
 
 p.L{
-    font-size: 24px!important;
-    line-height: 35px!important;
+    font-size: rem-calc(24px);
+    line-height: rem-calc(35px);
 }
 
 p.S{
-    font-size: 18px!important;
-    line-height: 27px!important;
+    font-size: rem-calc(18px);
+    line-height: rem-calc(27px);
 }
 
 button{
-    font-size: 20px!important;
-    line-height: 100%!important;
+    font-size: rem-calc(20px);
+    line-height: 100%;
 }
 
 p.eyebrow{
-    font-size: 22px!important;
-    line-height: 22px!important;
+    font-size: rem-calc(22px);
+    line-height: rem-calc(22px);
 }
   
   
 a.nav-link{
-    font-size: 20px!important;
-    line-height: 25px!important;
+    font-size: rem-calc(20px);
+    line-height: rem-calc(25px);
   }
   
 a.utility-nav{
-    font-size: 15px!important;
-    line-height: 100%!important;
+    font-size: rem-calc(15px);
+    line-height: 100%;
  }
 select,
 label,
 input{
-    font-size: 20px!important;
-    line-height: 100%!important;
+    font-size: rem-calc(20px);
+    line-height: 100%;
 }
 p.M,
 a {
-    font-size: 20px!important;
-    line-height: 27px!important;
+    font-size: rem-calc(20px);
+    line-height: rem-calc(27px);
 }
 
 p.call-out{
-    font-size: 39px!important;
-    line-height: 39px!important;
+    font-size: rem-calc(39px);
+    line-height: rem-calc(39px);
 }
 
 .d-center{
@@ -173,9 +174,8 @@ p.call-out{
 
 
 .announcement-bar {
-    width: 100%;
-    height: 70px;
-    padding: 20px 70px 20px 70px;
+    height: rem-calc(60px);
+    padding: 13.5px 70px 0 70px;
     background-color: $beaverBlue;
     color: $beaverWhite;
     a {
@@ -185,8 +185,7 @@ p.call-out{
 }
 
 .top-page {
-    padding: 20px 70px 20px 70px;
-
+    padding: 20px 70px 30px 70px;
     .utility-menu {
         display: flex;
         flex-direction: row-reverse;
@@ -199,23 +198,23 @@ p.call-out{
     
     .background{
         position: absolute;
-        top: 70px;
+        top: rem-calc(60px);
         z-index: -1;
         img {
-            width:1400px;
+            width: 100vw;
         }
         margin-left: -70px;
     }
 
     .nav-bar{
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        height: rem-calc(73px);
         background-color: $beaverWhite;
     }
     .nav-home{
         display: flex;
-        height: 70px;
         margin:0;
         padding: 0;
         background-color: $beaverWhite;
@@ -240,7 +239,7 @@ p.call-out{
         .menu {
             float: left;
             padding:0;
-            margin:10px 0 0 0;
+            margin: rem-calc(16px) 0 0 0;
             ul{
                 list-style: none;
             }
@@ -268,15 +267,14 @@ p.call-out{
                 float:none;
                 display:list-item;
                 position: relative;
-            }
-            ul ul li {
-                position: relative;
-                top:-60px;
-                left:170px; 
+                a{
+                    font-size: rem-calc(17px);
+                    line-height: rem-calc(25px);
+                }
             }
 
             .mobile-search{
-                margin-top: 10px;
+                margin: 10px 0 20px 0;
                 display: none;
                 width: 100%;
                 input{
@@ -292,7 +290,7 @@ p.call-out{
                     position: absolute;
                     right: 0;
                     padding: 0;
-                    i {font-size: 22px;}
+                    i {font-size: rem-calc(22px);}
 
                 }
                 border-bottom: 3px solid $beaverBlue;
@@ -312,10 +310,10 @@ p.call-out{
 
     .search-bar{
         .search-icon{
-            width: 70px;
-            height: 70px;
+            width: rem-calc(73px);
+            height: rem-calc(73px);
             background-color: $beaverBlue;
-            font-size: 30px;
+            font-size: rem-calc(30px);
             color: $beaverWhite;
         }
         .search-icon:hover {
@@ -338,7 +336,7 @@ p.call-out{
     }
     .search-line{
         position: absolute;
-        width: 1260px;
+        right: 70px;
     }
     #chk-search{ display: none;}
     #chk-search:checked + div {
@@ -347,15 +345,13 @@ p.call-out{
     }
 
     .text-content{
-        margin: 300px 150px 0 150px;
-        padding: 50px;
+        width: rem-calc(940px);
+        margin-top: rem-calc(500px);
+        padding: rem-calc(50px);
         background-color: $beaverWhite;
         color: $beaverBlue;
-        h1 {
-            margin: 10px 0;
-        }
         p {
-            margin: 10px 0;
+            margin: rem-calc(20px) 0;
         }
         .grade-choose {
             margin: 0;
@@ -365,12 +361,17 @@ p.call-out{
             select{
                 height: 50px;
                 min-width: 200px;
+                background-color: $beaverLightOrange;
+                border-bottom: 3px solid $beaverBlue;
             }
             button{
                 background-color: $beaverBlue;
                 color: $beaverWhite;
-                height: 50px;
-                font-size: 20px;
+                padding: 0;
+                margin: 0;
+                height: rem-calc(50px);
+                width: rem-calc(70px);
+                font-size: rem-calc(20px);
             }
         }
     }
@@ -379,92 +380,31 @@ p.call-out{
 }
 
 .medium-page{
-    .photo-slider{
-        margin-top: 10px;
-        .slider {
-            cursor: initial;
-            touch-action: auto;
-            align-items: center;
-            display: flex;
-            height: $photoSize;
-            width: 100%;
-            justify-content: center;
-        }
-    
-    
-        // Animation
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc($photoSize * (-8)))}
-        }
-    
-    
-        // Styling
-        .slider {
-            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-            height: $photoSize;
-            margin: auto;
-            overflow:hidden;
-            position: relative;
-            
-            &::before,
-            &::after {
-                content: "";
-                height: $photoSize;
-                position: absolute;
-                width: 0;
-            }
-            
-            &::after {
-                right: 0;
-                top: 0;
-            }
-    
-            &::before {
-                left: 0;
-                top: 0;
-            }
-            
-            .slide-track {
-                animation: scroll $animationSpeed linear infinite;
-                display: flex;
-                width: calc($photoSize * 16);
-            }
-            
-            .slide {
-                height: $photoSize;
-                width: $photoSize;
-            }
-            .slide > img{
-                width: $photoSize;
-                height: $photoSize;
-            }
-        }
-    }
-
     .about-overview{
-        margin-top: 1vw;
-        display: grid;
-        grid-template-columns: 15% auto 15%;
+        .panel{
+            margin-top: 50px
+        }
         .left-pic{
-            margin-top: 150px;
+            left: 0;
+            margin-top: rem-calc(150px);
+            z-index: -1;
             img{
-                width: 300px;
+                width: 20vw;
             }
         }
         .right-pic{
-            margin-top: 240px;
             display: flex;
             flex-direction: row-reverse;
+            margin-top: rem-calc(280px);
             z-index: -1;
             img{
-                width: 280px;
-                height: 400px;
+                width: 20vw;
+                height: 24vw;
             }
         }
         
         .overview-panel{
-            padding: 30px;
+            padding: 50px 75px 20px 75px;
             background-color: $beaverWhite;
             color: $beaverBlue;
             
@@ -476,7 +416,6 @@ p.call-out{
                 }
                 button {
                     margin: 0 10px 0 0;
-
                     background-color: $beaverOrange;
                     color: $beaverBlue;
                 }
@@ -487,21 +426,24 @@ p.call-out{
             padding: 30px;
             background-color: $beaverBlue;
             color: $beaverWhite;
+            p{
+                margin: 0;
+            }
         }
     }
 
 }
 
 .bottom-page {
-    margin-top: 10px;
-
     .camp-program-blocks{
         .general-camp{
+            margin-top: 40px;
             .panel-body{
                 padding-bottom: 130px;
             }
         }
         .special-camp{
+            margin-top: 40px;
             .panel-body{
                 padding-bottom: 50px;
             }
@@ -526,11 +468,11 @@ p.call-out{
                 margin: 0;
                 border: 5px solid $beaverBlue;
                 background-color: $beaverWhite;
-                h3{
-                    margin: 10px;
+                p,h1{
+                    margin: 0;
                 }
-                p {
-                    margin: 10px;
+                .card-body{
+                    height: rem-calc(140px);
                 }
             }
             p.call-out {
@@ -541,9 +483,9 @@ p.call-out{
     }
     
     .camp-stories-quote-block{
-        margin-top: 30px;
+        margin-top: 60px;
         .panel {
-            margin-top: 10px;
+            margin-top: 30px;
             .camp-title{
                 display: flex;
                 flex-direction: column-reverse;
@@ -551,6 +493,7 @@ p.call-out{
                 background-color: $beaverBlue;
             }
             .pic-panel{
+                padding: 5px;
                 background-color: $beaverBlue;
                 img {
                     border: 5px solid $beaverBlue;
@@ -601,14 +544,14 @@ p.call-out{
         .control-icons {
             display: flex;
             i {
-                font-size: 40px !important;
+                font-size: rem-calc(40px) !important;
                 padding-right: 1vw;
             }
         }
     }
 }
 
-footer {
+.footer {
     padding: 0 70px 30px 70px;
     background-color: $beaverBlue;
     h4,p,a,label{
@@ -618,7 +561,7 @@ footer {
         color: $beaverBlue !important;
     }
     label{
-        font-size: 14px !important;
+        font-size: rem-calc(14px) !important;
     }
     a {
         text-decoration: underline;
@@ -653,7 +596,7 @@ footer {
                 align-items: flex-start;
                 flex-direction: column;
                 a{
-                    font-size:17px !important;
+                    font-size:rem-calc(17px) !important;
                     margin-top: 10px;
                     text-decoration: none;
                 }
@@ -715,63 +658,63 @@ footer {
         }
         
         h1 {
-            font-size: 34px!important;
-            line-height: 34px!important;
+            font-size: rem-calc(34px);
+            line-height: rem-calc(34px);
         }
         
         h2 {
-            font-size: 30px!important;
-            line-height: 33px!important;
+            font-size: rem-calc(30px);
+            line-height: rem-calc(33px);
         }
         h2.alt{
-            font-size: 31px!important;
-            line-height: 36px!important;
+            font-size: rem-calc(31px);
+            line-height: rem-calc(36px);
         }
         
         h3{
-            font-size: 24x!important;
-            line-height: 25px!important;
+            font-size: rem-calc(24x);
+            line-height: rem-calc(25px);
         }
         h4{
-            font-size: 21px!important;
-            line-height: 32px!important;
+            font-size: rem-calc(21px);
+            line-height: rem-calc(32px);
         }
           
         p.XL {
-            font-size: 23px!important;
-            line-height: 29px!important;
+            font-size: rem-calc(23px);
+            line-height: rem-calc(29px);
         }
         p.M,
         p.L{
-            font-size: 18px!important;
-            line-height: 24px!important;
+            font-size: rem-calc(18px);
+            line-height: rem-calc(24px);
         }
         
         button{
-            font-size: 18px!important;
-            line-height: 22px!important;
+            font-size: rem-calc(18px);
+            line-height: rem-calc(22px);
         }
         
         p.eyebrow{
-            font-size: 20px!important;
-            line-height: 20px!important;
+            font-size: rem-calc(20px);
+            line-height: rem-calc(20px);
         }
           
           
         a.nav-link{
-            font-size: 20px!important;
-            line-height: 25px!important;
+            font-size: rem-calc(20px);
+            line-height: rem-calc(25px);
         }
           
         
         a {
-            font-size: 16px!important;
-            line-height: 25px!important;
+            font-size: rem-calc(16px);
+            line-height: rem-calc(25px);
         }
         
         p.call-out{
-            font-size: 31px!important;
-            line-height: 39px!important;
+            font-size: rem-calc(31px);
+            line-height: rem-calc(39px);
         }
     }
 
@@ -783,7 +726,10 @@ footer {
         padding: 0;
         .hero{
             .nav-bar{
+                margin: 0;
                 display: block;
+                height: rem-calc(56px);
+                
             }
             .utility-menu,
             .nav-bar .search-bar{
@@ -791,28 +737,26 @@ footer {
             }
             .background{
                 position: relative;
-                margin: -67px 0 0 0;
+                top: 0;
+                margin: 0;
                 z-index: -1;
-                img{
-                    width: 100%;
-                }
             }
         }
     }
     .top-page .nav-home{
         #logo {
             padding: 0 25px;
-        }
-        height: 56px;
-        .mobile-header{
-            .logo{
-                width: 93px;
+            img{
+                width: rem-calc(93px);
             }
+        }
+        height: rem-calc(56px);
+        .mobile-header{
             label{
-                font-size: 24px !important;
+                font-size: rem-calc(24px);
                 position: absolute;
-                right: 10px;
-                top:20px;
+                right: rem-calc(20px);
+                top: rem-calc(10px);
             }
         }
         display: block;
@@ -836,11 +780,12 @@ footer {
         .menu{
             display: none;
             margin: 0 25px;
-            width: 325px;
+            width: calc(100% - 50px);
             li > label{
                 margin-top: 10px;
                 padding : 10px;
-                font-size: 12px;
+                font-size: rem-calc(16px);
+                line-height: rem-calc(25px);
             }
             li:hover > ul{
                 border-bottom: none;
@@ -862,12 +807,16 @@ footer {
         }
         [id^=drop]:checked + ul {
             display: block !important;
+            li a{
+                font-size: rem-calc(15px);
+                line-height: rem-calc(25px);
+            }
         }
         
     }
     .top-page{
         .text-content{
-            margin: 100px 0 0 0;
+            margin: 0;
             padding: 20px;
             .grade-choose{
                 width: 100%;
@@ -876,6 +825,9 @@ footer {
     }
 
     .medium-page{
+        .photo-slider{
+            margin: 20px 0;
+        }
         .about-overview{
             display: flex;
             .left-pic,
@@ -908,6 +860,9 @@ footer {
                 padding: 30px 25px;
                 p.call-out{
                     margin:20px 0 0 0;
+                }
+                .card .card-body{
+                    height: rem-calc(98px);
                 }
             }
             .describe{
@@ -943,12 +898,12 @@ footer {
         .storytelling-blocks{
             padding: 50px 25px;
             p.XXL{
-                font-size: 25px !important;
+                font-size: rem-calc(25px) !important;
                 line-height: 34px !important;
             }
         }
     }
-    footer{
+    .footer{
         padding: 0 20px 30px 20px;
         .footer-left p{
             margin: 40px 0 20px 0;
