@@ -1,6 +1,11 @@
 @font-face {
     font-family: generalSan-Medium;
-    src: url("/css/font/GeneralSans-Medium.otf");
+    src: url("/css/font/GeneralSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: generalSan-Semibold;
+    src: url("/css/font/GeneralSans-Semibold.ttf");
 } 
 
 @font-face {
@@ -48,6 +53,7 @@ body {
     // width: 1400px;
     margin: 0 auto !important;
     overflow-x: hidden;
+    color: $beaverBlue;
 }
 
 // button {
@@ -61,24 +67,24 @@ img {
 i.bi-bold::before{
     font-weight: 1000!important;
 }
-a.nav-link, a.utility-nav, a, label, select, text{
-    font-family: satoshi-Bold, sans-serif !important;
+a.text-link, a.nav-link, a.utility-nav, a, label, select, text{
+    font-family: satoshi-Bold, sans-serif;
 }
 
 h1,h2,h3,h4,button{
-    font-family: satoshi-Black, sans-serif !important;
+    font-family: satoshi-Black, sans-serif;
 }
 
 p.XXL,p.L,p.M,p.S,p.XS{
-    font-family: satoshi-Medium, sans-serif !important;
+    font-family: satoshi-Medium, sans-serif;
 }
 
 p.XL{
-    font-family: pilcrow-Medium, sans-serif !important;
+    font-family: pilcrow-Medium, sans-serif;
 }
 
 p.eyebrow{
-    font-family: pilcrow-Semibold, sans-serif !important;
+    font-family: pilcrow-Semibold, sans-serif;
 }
 
 h2.alt,h3.alt,h5, p.call-out{
@@ -86,12 +92,12 @@ h2.alt,h3.alt,h5, p.call-out{
 }
 
 footer label{
-    font-family: generalSan-Medium, sans-serif !important;
+    font-family: generalSan-Medium, sans-serif ;
 }
 
 h1 {
-    font-size: rem-calc(54px)!important;
-    line-height: rem-calc(60px)!important;
+    font-size: rem-calc(54px);
+    line-height: rem-calc(60px);
 }
 
 h2,
@@ -128,6 +134,11 @@ p.S{
     font-size: rem-calc(18px);
     line-height: rem-calc(27px);
 }
+p.XS{
+    font-size: rem-calc(16px);
+    line-height: rem-calc(19px);
+}
+
 
 button{
     font-size: rem-calc(20px);
@@ -143,11 +154,19 @@ p.eyebrow{
 a.nav-link{
     font-size: rem-calc(20px);
     line-height: rem-calc(25px);
-  }
+    text-decoration: none;
+}
+
+a.text-link{
+    font-size: rem-calc(20px);
+    line-height: rem-calc(27px);
+    text-decoration: underline;
+}
   
 a.utility-nav{
     font-size: rem-calc(15px);
     line-height: 100%;
+    text-decoration: underline;
  }
 select,
 label,
@@ -619,6 +638,180 @@ p.call-out{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+    }
+}
+
+.detail-page{
+    .top-page{
+        .hero{
+            .background {
+                top: 0;
+            }
+            .prev-next-btn {
+                position: absolute;
+                right: 100px;
+                top: calc(100vw / 1400px * 706px - 75px);
+                font-size: rem-calc(16px);
+                line-height: rem-calc(25px);
+                font-family: generalSan-Semibold, sans-serif;
+                padding: 24px 20px;
+                width: 160px;
+                height: 79px;
+                background-color: $beaverLightOrange;
+            }
+        }
+    }
+    .hero-content{
+        margin: calc(100vw / 1400px * 706px - 280px) 100px 0 100px;
+        align-items: flex-end;
+        .main-content{
+            background-color: $beaverWhite;
+            color: $beaverBlue;
+            margin-right: 16px;
+            padding: 50px;
+            .pretitle{
+                display: inline-flex;
+                p{margin-right: 30px;}
+            }
+            button{
+                background-color: $beaverOrange;
+                color: $beaverBlue;
+            }
+        }
+        .sub-content{
+            background-color: $beaverWhite;
+            color: $beaverBlue;
+            padding: 40px;
+            .panel{
+                margin-top: 25px;
+                p{margin:0;}
+            }
+        }
+    }
+    .jump-to-section{
+        margin: 20px 100px 0 100px;
+        padding: 40px 50px;
+        background-color: $beaverWhite;
+        color: $beaverBlue;
+        .jump-to{
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: $beaverBlue;
+            }
+        }
+    }
+    .sample-day{
+        margin: 56px 100px;
+        color : $beaverBlue;
+        a {color: $beaverBlue;}
+        .header{
+            width: 60%;
+            margin-bottom: 40px;
+        }
+        .story-telling-block{
+            margin-bottom: 15px;
+            background-color: $beaverWhite;
+            // color: $beaverBlue;
+            .no-pic{
+                padding: 40px 0;
+            }
+            .pic-2 {
+                .pic-body{
+                    background-color: $beaverBlue;
+                    padding: 4px;
+                    img {
+                        width: calc((100vw - 200px) * 7 / 24 - 12px);
+                    }
+                }
+            }
+            .pic-1 {
+                .pic-body{
+                    background-color: $beaverBlue;
+                    padding: 4px;
+                    img {
+                        width: calc((100vw - 200px) * 7 / 12 - 18px);
+                    }
+                }
+            }
+            .description{
+                padding: 30px;
+            }
+            .right{
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    .activities{
+        color: $beaverBlue;
+        .header{
+            padding-left: 100px;
+        }
+        .activities-panel{
+            margin-bottom: 40px;
+            .header{
+                padding: 50px 100px;
+                background-color: $beaverWhite;
+            }
+            .content{
+                padding: 55px 100px;
+                background-color: $beaverBlue;
+                .card {
+                    margin: 0;
+                    border: 5px solid $beaverBlue;
+                    background-color: $beaverWhite;
+                    h3{margin:0}
+                    p{
+                        margin-top: 10px;
+                    }
+                    .card-body{
+                        padding: 20px;
+                        height: rem-calc(140px);
+                    }
+                }
+
+            }
+            
+        }
+    }
+    .learn-more-info{
+        padding: 0 100px;
+        .panel{
+            padding: 50px;
+            background-color: $beaverWhite;
+            color: $beaverBlue;
+            button{
+                background-color: $beaverBlue;
+                columns: $beaverWhite;
+            }
+        }
+    }
+    .electives-directors{
+        margin: 66px 100px;
+        color: $beaverBlue;
+        a{color: $beaverBlue;}
+        .panel{
+            margin-top: 20px;
+            padding: 50px;
+            background-color: $beaverWhite;
+        }
+    }
+    .related-programs{
+        color: $beaverBlue;
+        margin-bottom: 66px;
+        .header{
+            padding: 55px 100px;
+            background-color: $beaverWhite;
+        }
+        .content{
+            padding: 55px 100px;
+            background-color: $beaverYellow;
+            .card{
+                .card-body{
+                    height: 140px;
+                }
+            }
+        }
     }
 }
 
