@@ -6,4 +6,4 @@ new Splide( '.splide' , {
     gap     : '0',
     autoplay: true,
     interval: 2000,
-  }).mount();
+}).mount();

@@ -71,8 +71,15 @@ a.text-link, a.nav-link, a.utility-nav, a, label, select, text{
     font-family: satoshi-Bold, sans-serif;
 }
 
-h1,h2,h3,h4,button{
+h1,h2,h3,h4{
     font-family: satoshi-Black, sans-serif;
+}
+
+body button,
+.button{
+    font-family: satoshi-Black, sans-serif;
+    font-size: rem-calc(20px);
+    line-height: 100%;
 }
 
 p.XXL,p.L,p.M,p.S,p.XS{
@@ -137,12 +144,6 @@ p.S{
 p.XS{
     font-size: rem-calc(16px);
     line-height: rem-calc(19px);
-}
-
-
-button{
-    font-size: rem-calc(20px);
-    line-height: 100%;
 }
 
 p.eyebrow{
@@ -362,10 +363,11 @@ p.call-out{
         display:flex;
         flex-direction: row-reverse;
     }
+}
 
+.medium-page{
     .text-content{
-        width: rem-calc(940px);
-        margin-top: rem-calc(500px);
+        margin-top: calc(100vw / 1400px * 580px - 280px);
         padding: rem-calc(50px);
         background-color: $beaverWhite;
         color: $beaverBlue;
@@ -395,10 +397,9 @@ p.call-out{
         }
     }
 
-    
-}
-
-.medium-page{
+    .photo-slider{
+        margin-top: 30px;
+    }
     .about-overview{
         .panel{
             margin-top: 50px
@@ -414,7 +415,7 @@ p.call-out{
         .right-pic{
             display: flex;
             flex-direction: row-reverse;
-            margin-top: rem-calc(280px);
+            margin-top: calc(480px - (100vw - 1400px) * 0.4);
             z-index: -1;
             img{
                 width: 20vw;
@@ -423,18 +424,20 @@ p.call-out{
         }
         
         .overview-panel{
-            padding: 50px 75px 20px 75px;
+            padding: 50px 75px;
             background-color: $beaverWhite;
             color: $beaverBlue;
-            
+            p{
+                margin: 26px 0;
+            }
             .link-btn {
                 a {
-                    margin-right: 10px;
+                    margin-right: 20px;
                     color: $beaverBlue;
                     text-decoration: underline;
                 }
                 button {
-                    margin: 0 10px 0 0;
+                    margin: 0 20px;
                     background-color: $beaverOrange;
                     color: $beaverBlue;
                 }
@@ -442,9 +445,12 @@ p.call-out{
         }
 
         .reg-info-panel{
-            padding: 30px;
+            padding: 50px;
             background-color: $beaverBlue;
             color: $beaverWhite;
+            h3{
+                margin-bottom: 15px;
+            }
             p{
                 margin: 0;
             }
@@ -468,11 +474,14 @@ p.call-out{
             }
         }
         .describe{
-            padding: 30px 300px;
+            padding: 55px 300px;
             background-color: $beaverWhite;
             color: $beaverBlue;
-
+            p{
+                margin: 20px 0 0 0;
+            }
             button{
+                margin: 20px 0 0 0;
                 background-color: $beaverYellow;
                 color: $beaverBlue;
                 padding: 10px;
@@ -557,13 +566,17 @@ p.call-out{
     }
 
     .storytelling-blocks{
-        margin: 20px 0;
+        margin: 70px 0;
         background-color: $beaverYellow;
-        padding: 40px 70px;
+        padding: 55px 100px;
+        p{
+            margin: 35px 0;
+        }
         .control-icons {
+            margin-top: 35px;
             display: flex;
             i {
-                font-size: rem-calc(40px) !important;
+                font-size: rem-calc(53px) !important;
                 padding-right: 1vw;
             }
         }
@@ -601,6 +614,10 @@ p.call-out{
         .link-btn{
             display: inline;
             a,button{margin: 10px}
+            a{
+                font-size: rem-calc(15px);
+                line-height: 100%;
+            }
             .yellow{
                 background-color: $beaverYellow;
             }
@@ -661,155 +678,156 @@ p.call-out{
             }
         }
     }
-    .hero-content{
-        margin: calc(100vw / 1400px * 706px - 280px) 100px 0 100px;
-        align-items: flex-end;
-        .main-content{
-            background-color: $beaverWhite;
-            color: $beaverBlue;
-            margin-right: 16px;
-            padding: 50px;
-            .pretitle{
-                display: inline-flex;
-                p{margin-right: 30px;}
-            }
-            button{
-                background-color: $beaverOrange;
-                color: $beaverBlue;
-            }
-        }
-        .sub-content{
-            background-color: $beaverWhite;
-            color: $beaverBlue;
-            padding: 40px;
-            .panel{
-                margin-top: 25px;
-                p{margin:0;}
-            }
-        }
-    }
-    .jump-to-section{
-        margin: 20px 100px 0 100px;
-        padding: 40px 50px;
+}
+
+.hero-content{
+    margin: calc(100vw / 1400px * 706px - 280px) 100px 0 100px;
+    align-items: flex-end;
+    .main-content{
         background-color: $beaverWhite;
         color: $beaverBlue;
-        .jump-to{
-            display: flex;
-            justify-content: space-between;
-            a{
-                color: $beaverBlue;
-            }
+        margin-right: 16px;
+        padding: 50px;
+        .pretitle{
+            display: inline-flex;
+            p{margin-right: 30px;}
         }
-    }
-    .sample-day{
-        margin: 56px 100px;
-        color : $beaverBlue;
-        a {color: $beaverBlue;}
-        .header{
-            width: 60%;
-            margin-bottom: 40px;
-        }
-        .story-telling-block{
-            margin-bottom: 15px;
-            background-color: $beaverWhite;
-            // color: $beaverBlue;
-            .no-pic{
-                padding: 40px 0;
-            }
-            .pic-2 {
-                .pic-body{
-                    background-color: $beaverBlue;
-                    padding: 4px;
-                    img {
-                        width: calc((100vw - 200px) * 7 / 24 - 12px);
-                    }
-                }
-            }
-            .pic-1 {
-                .pic-body{
-                    background-color: $beaverBlue;
-                    padding: 4px;
-                    img {
-                        width: calc((100vw - 200px) * 7 / 12 - 18px);
-                    }
-                }
-            }
-            .description{
-                padding: 30px;
-            }
-            .right{
-                flex-direction: row-reverse;
-            }
-        }
-    }
-    .activities{
-        color: $beaverBlue;
-        .header{
-            padding-left: 100px;
-        }
-        .activities-panel{
-            margin-bottom: 40px;
-            .header{
-                padding: 50px 100px;
-                background-color: $beaverWhite;
-            }
-            .content{
-                padding: 55px 100px;
-                background-color: $beaverBlue;
-                .card {
-                    margin: 0;
-                    border: 5px solid $beaverBlue;
-                    background-color: $beaverWhite;
-                    h3{margin:0}
-                    p{
-                        margin-top: 10px;
-                    }
-                    .card-body{
-                        padding: 20px;
-                        height: rem-calc(140px);
-                    }
-                }
-
-            }
-            
-        }
-    }
-    .learn-more-info{
-        padding: 0 100px;
-        .panel{
-            padding: 50px;
-            background-color: $beaverWhite;
+        button{
+            background-color: $beaverOrange;
             color: $beaverBlue;
-            button{
+        }
+    }
+    .sub-content{
+        background-color: $beaverWhite;
+        color: $beaverBlue;
+        padding: 40px;
+        .panel{
+            margin-top: 25px;
+            p{margin:0;}
+        }
+    }
+}
+.jump-to-section{
+    margin: 20px 100px 0 100px;
+    padding: 40px 50px;
+    background-color: $beaverWhite;
+    color: $beaverBlue;
+    .jump-to{
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: $beaverBlue;
+        }
+    }
+}
+.sample-day{
+    margin: 56px 100px;
+    color : $beaverBlue;
+    a {color: $beaverBlue;}
+    .header{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .story-telling-block{
+        margin-bottom: 15px;
+        background-color: $beaverWhite;
+        // color: $beaverBlue;
+        .no-pic{
+            padding: 40px 0;
+        }
+        .pic-2 {
+            .pic-body{
                 background-color: $beaverBlue;
-                columns: $beaverWhite;
+                padding: 4px;
+                img {
+                    width: calc((100vw - 200px) * 7 / 24 - 12px);
+                }
             }
         }
-    }
-    .electives-directors{
-        margin: 66px 100px;
-        color: $beaverBlue;
-        a{color: $beaverBlue;}
-        .panel{
-            margin-top: 20px;
-            padding: 50px;
-            background-color: $beaverWhite;
+        .pic-1 {
+            .pic-body{
+                background-color: $beaverBlue;
+                padding: 4px;
+                img {
+                    width: calc((100vw - 200px) * 7 / 12 - 18px);
+                }
+            }
+        }
+        .description{
+            padding: 30px;
+        }
+        .right{
+            flex-direction: row-reverse;
         }
     }
-    .related-programs{
-        color: $beaverBlue;
-        margin-bottom: 66px;
+}
+.activities{
+    color: $beaverBlue;
+    .header{
+        padding-left: 100px;
+    }
+    .activities-panel{
+        margin-bottom: 40px;
         .header{
-            padding: 55px 100px;
+            padding: 50px 100px;
             background-color: $beaverWhite;
         }
         .content{
             padding: 55px 100px;
-            background-color: $beaverYellow;
-            .card{
-                .card-body{
-                    height: 140px;
+            background-color: $beaverBlue;
+            .card {
+                margin: 0;
+                border: 5px solid $beaverBlue;
+                background-color: $beaverWhite;
+                h3{margin:0}
+                p{
+                    margin-top: 10px;
                 }
+                .card-body{
+                    padding: 20px;
+                    height: rem-calc(140px);
+                }
+            }
+
+        }
+        
+    }
+}
+.learn-more-info{
+    padding: 0 100px;
+    .panel{
+        padding: 50px;
+        background-color: $beaverWhite;
+        color: $beaverBlue;
+        button{
+            background-color: $beaverBlue;
+            columns: $beaverWhite;
+        }
+    }
+}
+.electives-directors{
+    margin: 66px 100px;
+    color: $beaverBlue;
+    a{color: $beaverBlue;}
+    .panel{
+        margin-top: 20px;
+        padding: 50px;
+        background-color: $beaverWhite;
+    }
+}
+.related-programs{
+    color: $beaverBlue;
+    margin-bottom: 66px;
+    .header{
+        padding: 55px 100px;
+        background-color: $beaverWhite;
+    }
+    .content{
+        padding: 55px 100px;
+        background-color: $beaverYellow;
+        .card{
+            .card-body{
+                height: 140px;
             }
         }
     }
@@ -1007,7 +1025,7 @@ p.call-out{
         }
         
     }
-    .top-page{
+    .medium-page{
         .text-content{
             margin: 0;
             padding: 20px;
