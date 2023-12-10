@@ -485,6 +485,8 @@ p.call-out{
                 background-color: $beaverYellow;
                 color: $beaverBlue;
                 padding: 10px;
+                height: 55px;
+                width: 278px;
             }
         }
         .panel-body{
@@ -577,7 +579,7 @@ p.call-out{
             display: flex;
             i {
                 font-size: rem-calc(53px) !important;
-                padding-right: 1vw;
+                margin-right: 20px;
             }
         }
     }
