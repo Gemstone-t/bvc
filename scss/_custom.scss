@@ -1196,6 +1196,21 @@ p.call-out{
                 font-size: rem-calc(25px) !important;
                 line-height: 34px !important;
             }
+            .splide__arrows {
+                margin-top: 35px;
+                position: relative;
+                display: flex;
+                .splide__arrow{
+                    width: 70px;
+                    height: 100%;
+                    position: relative;
+                    background: transparent;
+                    i {
+                        font-size: rem-calc(40px) !important;
+                        margin-right: 20px;
+                    }
+                }
+            }
         }
     }
     .footer{
