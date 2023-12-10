@@ -32,14 +32,17 @@
                   <div id="logo">
                     <img src="/img/logo.png" />
                   </div>
-                  <label for="drop" class="toggle"><i class="bi bi-list bi-bold"></i></label>
+                  <label for="drop" class="toggle">
+                    <i id="show-list" class="bi bi-list bi-bold"></i>
+                    <i id="hide-list" class="bi bi-x-lg bi-bold"></i>
+                  </label>
                 </div>
                 <input type="checkbox" id="drop" />
                 <ul class="menu">
                   <li>
-                    <label for="drop_1" class="toggle">Programs <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
+                    <label for="drop-1" class="toggle">Programs <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
                     <a class="nav-link" href="#">Programs <i class="bi bi-chevron-down bi-bold"></i></a>
-                    <input type="checkbox" id="drop_1"/>
+                    <input type="checkbox" id="drop-1"/>
                     <ul>
                       <li><a href="#">PreK - K</a></li>
                       <li><a href="/detail.html">Grades 1 - 2</a></li>
@@ -138,7 +141,7 @@
               <p class="medium-2" />
             </div>
             <section class="photo-slider">
-              <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+              <div id="photo-slider" class="splide" role="group" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                   <ul class="splide__list" role="presentation">
                     <li class="splide__slide"><img src="/img/home/photo_slider/1.png" alt="" /></li>
@@ -161,7 +164,10 @@
             <section class="medium-8">
               <div class="panel">
                 <div class="overview-panel text-center">
-                  <h2>Welcome to an unforgettable summer.</h2>
+                  <h2 class="highlight">
+                    <span>Welcome to an</span>
+                    <span>unforgettable summer.</span>
+                  </h2>
                   <p class="L">Beaver Summer Camp is a day camp in Chestnut Hill for kids ages 3-15. But beyond those details, it’s a little hard to explain. Yes, it’s summer camp. But it’s also the smell of toasting marshmallows, a contagious belly laugh, and the MAGIC that happens when a group of kids is given permission to just BE. Summer goes by in the blink of an eye, so at Beaver, we make sure it’s memorable.</p>
                   <div class="d-center">
                     <div class="link-btn">
@@ -184,8 +190,8 @@
           </div>
         </section>
         <section class="bottom-page">
-          <div class="content camp-program-blocks">
-            <div class="general-camp">
+          <section class="content camp-program-blocks">
+            <section class="general-camp">
               <div class="describe">
                 <div class="text-center">
                   <h2>General Camp</h2>
@@ -232,8 +238,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="special-camp">
+            </section>
+            <section class="special-camp">
               <div class="describe">
                 <div class="text-center">
                   <h2>Specialty Camps</h2>
@@ -296,64 +302,92 @@
                 </div>
                 <p class="call-out">+ MUCH MORE!</p>
               </div>
-            </div>
-          </div>
-          <div class="content camp-stories-quote-block">
-            <div class="panel left orange grid-x">
-              <div class="camp-title large-2">
-                <p class="call-out">Sit ipsum nunc Mi</p>
-              </div>
-              <div class="pic-panel large-6">
-                <img src="/img/home/stories_quote/1.png"/>
-                <img src="/img/home/stories_quote/2.png"/>
-              </div>
-              <div class="describe large-4 d-center">
-                <div class="text-center">
-                  <h2>Welcoming community</h2>
-                  <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+            </section>
+          </section>
+          <section class="content camp-stories-quote-block">
+            <section>
+              <div class="panel left orange grid-x">
+                <div class="camp-title large-2">
+                  <p class="call-out">Sit ipsum nunc Mi</p>
+                </div>
+                <div class="pic-panel large-6">
+                  <img src="/img/home/stories_quote/1.png"/>
+                  <img src="/img/home/stories_quote/2.png"/>
+                </div>
+                <div class="describe large-4 d-center">
+                  <div class="text-center">
+                    <h2>Welcoming community</h2>
+                    <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="panel right yellow grid-x">
-              <div class="camp-title medium-2 text-right">
-                <p class="call-out">Sit ipsum nunc Mi</p>
-              </div>
-              <div class="pic-panel medium-6">
-                <img src="/img/home/stories_quote/1.png"/>
-                <img src="/img/home/stories_quote/2.png"/>
-              </div>
-              <div class="describe medium-4 d-center">
-                <div class="text-center">
-                  <h2>Welcoming community</h2>
-                  <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+            </section>
+            <section>
+              <div class="panel right yellow grid-x">
+                <div class="camp-title medium-2 text-right">
+                  <p class="call-out">Sit ipsum nunc Mi</p>
+                </div>
+                <div class="pic-panel medium-6">
+                  <img src="/img/home/stories_quote/1.png"/>
+                  <img src="/img/home/stories_quote/2.png"/>
+                </div>
+                <div class="describe medium-4 d-center">
+                  <div class="text-center">
+                    <h2>Welcoming community</h2>
+                    <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="panel left white grid-x">
-              <div class="camp-title medium-2 text-right">
-                <p class="call-out">Sit ipsum nunc Mi</p>
-              </div>
-              <div class="pic-panel medium-6">
-                <img src="/img/home/stories_quote/1.png"/>
-                <img src="/img/home/stories_quote/2.png"/>
-              </div>
-              <div class="describe medium-4 d-center">
-                <div class="text-center">
-                  <h2>Welcoming community</h2>
-                  <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+            </section>
+            <section>
+              <div class="panel left white grid-x">
+                <div class="camp-title medium-2 text-right">
+                  <p class="call-out">Sit ipsum nunc Mi</p>
+                </div>
+                <div class="pic-panel medium-6">
+                  <img src="/img/home/stories_quote/1.png"/>
+                  <img src="/img/home/stories_quote/2.png"/>
+                </div>
+                <div class="describe medium-4 d-center">
+                  <div class="text-center">
+                    <h2>Welcoming community</h2>
+                    <p class="M">We help kids find their voice, make their way, and make room for others.</p>
+                  </div>
                 </div>
               </div>
+            </section>
+          </section>
+          <section>
+            <div id="story-slider" class="storytelling-blocks splide" role="group" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list" role="presentation">
+                  <li class="splide__slide">
+                    <div class="content">
+                      <h2 class="alt">CAMP STORIES-1</h2>
+                      <p class="XXL">“Lorem ipsum dolor sit amet consectetur. Posuere sed condimentum neque ullamcorper. Non sit pulvinar amet ligula. Lacus hac tellus nisl mauris libero parturient cursus sed condimentum. Non sit pulvinar amet ligula.”</p>
+                      <h2 class="alt">— NICK CARUSO, UPPER CAMP ASSISTANT DIRECTOR</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="content">
+                      <h2 class="alt">CAMP STORIES-2</h2>
+                      <p class="XXL">“Lorem ipsum dolor sit amet consectetur. Posuere sed condimentum neque ullamcorper. Non sit pulvinar amet ligula. Lacus hac tellus nisl mauris libero parturient cursus sed condimentum. Non sit pulvinar amet ligula.”</p>
+                      <h2 class="alt">— NICK CARUSO, UPPER CAMP ASSISTANT DIRECTOR</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <i class="bi bi-arrow-left-circle bi-bold"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <i class="bi bi-arrow-right-circle bi-bold"></i>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="content storytelling-blocks">
-            <h2 class="alt">CAMP STORIES</h2>
-            <p class="XXL">“Lorem ipsum dolor sit amet consectetur. Posuere sed condimentum neque ullamcorper. Non sit pulvinar amet ligula. Lacus hac tellus nisl mauris libero parturient cursus sed condimentum. Non sit pulvinar amet ligula.”</p>
-            <h2 class="alt">— NICK CARUSO, UPPER CAMP ASSISTANT DIRECTOR</h2>
-            <div class="control-icons">
-              <i class="bi bi-arrow-left-circle bi-bold"></i>
-              <i class="bi bi-arrow-right-circle bi-bold"></i>
-            </div>
-          </div>
+          </section>
+          
         </section>
       </div>
       <div class="footer">
@@ -361,7 +395,10 @@
           <div class="footer-left large-4">
             <img src="/img/logo_white.png">
             <p class="S medium-3">Eleifend semper nec ullamcorper ornare vitae sed ipsum est. Risus sed odio eleifend adipiscing et aliquam. Habitasse diam sagittis erat sed dictum. Facilisis quis sollicitudin facilisi amet ut.</p>
-            <a class="medium-3" href="#">Learn more about Beaver Summer Camp</a>
+            <a class="medium-3 highlight" href="#">
+              <span>Learn more about</span>
+              <span>Beaver Camp</span>
+            </a>
           </div>
           <div class="footer-right large-8">
             <div class="link-btn order-3">
@@ -400,7 +437,7 @@
         </div>
         <div class="footer-bottom">
           <div class="reserved">
-            <label>© Beaver Summer Camp. All rights reserved.</label>
+            <label class="copyright">© Beaver Summer Camp. All rights reserved.</label>
           </div>
           <div class="logo-group">
             <img src="/img/logo1-1.png">

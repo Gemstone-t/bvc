@@ -84,6 +84,7 @@ body button,
 
 p.XXL,p.L,p.M,p.S,p.XS{
     font-family: satoshi-Medium, sans-serif;
+    font-weight: 500;
 }
 
 p.XL{
@@ -99,7 +100,7 @@ h2.alt,h3.alt,h5, p.call-out{
 }
 
 footer label{
-    font-family: generalSan-Medium, sans-serif ;
+    font-family: generalSan-Medium, sans-serif;
 }
 
 h1 {
@@ -192,6 +193,10 @@ p.call-out{
     justify-content: center;
 }
 
+.highlight{
+    display: flex;
+    flex-direction: column;
+}
 
 .announcement-bar {
     height: rem-calc(60px);
@@ -574,12 +579,25 @@ p.call-out{
         p{
             margin: 35px 0;
         }
-        .control-icons {
+        .splide__arrows {
             margin-top: 35px;
+            position: relative;
             display: flex;
-            i {
-                font-size: rem-calc(53px) !important;
-                margin-right: 20px;
+            .splide__arrow{
+                width: 70px;
+                height: 100%;
+                position: relative;
+                background: transparent;
+                i {
+                    font-size: rem-calc(53px) !important;
+                    margin-right: 20px;
+                }
+            }
+            .splide__arrow--next{
+                right: 0;
+            }
+            .splide__arrow--prev{
+                left: 0;
             }
         }
     }
@@ -593,9 +611,6 @@ p.call-out{
     }
     button{
         color: $beaverBlue !important;
-    }
-    label{
-        font-size: rem-calc(14px) !important;
     }
     a {
         text-decoration: underline;
@@ -657,6 +672,11 @@ p.call-out{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+    }
+    label.copyright{
+        font-family: generalSan-Medium, sans-serif;
+        font-weight: 400;
+        font-size: rem-calc(14px);
     }
 }
 
@@ -835,6 +855,49 @@ p.call-out{
     }
 }
 
+.landing-page{
+    .top-page{
+        .hero{
+            .background {
+                top: 0;
+            }
+            .main-content{
+                color: $beaverBlue;
+                a{
+                    color: $beaverBlue;
+                }
+                margin-top: 100px;
+                background-color: $beaverWhite;
+                padding: 40px 50px;
+                width: calc(665px * (100vw / 1400px));
+                h1, p.S{
+                    margin: 15px 0;
+                }
+                button, .button{
+                    background-color: $beaverOrange;
+                    color: $beaverBlue;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.image-content-group{
+    background-color: $beaverBlue;
+    padding: 65px 100px;
+}
+
+.image-content{
+    .header{
+        color: $beaverYellow;
+        margin-bottom: 20px;
+    }
+    .card .card-body{
+        height: 140px;
+    }
+}
+
 // Mobile scss 
 
 @media screen and (max-width: 767px){
@@ -842,32 +905,32 @@ p.call-out{
     body{
         width: 100%;
         
-        a.nav-link, a, label, select, text{
-            font-family: satoshi-Bold, sans-serif !important;
+        a.nav-link, a, label, text{
+            font-family: satoshi-Bold, sans-serif;
         }
         
-        h1,h2,h3,h4,button{
-            font-family: satoshi-Black, sans-serif !important;
+        h1,h2,h3,h4,button,.button{
+            font-family: satoshi-Black, sans-serif;
         }
         
         p.M,
         p.L{
-            font-family: satoshi-Medium, sans-serif !important;
+            font-family: satoshi-Medium, sans-serif;
         }
         
         p.XL{
-            font-family: pilcrow-Medium, sans-serif !important;
+            font-family: pilcrow-Medium, sans-serif;
         }
         
         p.eyebrow{
-            font-family: pilcrow-Semibold, sans-serif !important;
+            font-family: pilcrow-Semibold, sans-serif;
         }
         
         h2.alt, p.call-out{
             font-family: tanker-Regular, sans-serif;
         }
         footer label{
-            font-family: generalSan-Medium, sans-serif !important;
+            font-family: generalSan-Medium, sans-serif;
         }
         
         h1 {
@@ -903,7 +966,7 @@ p.call-out{
             line-height: rem-calc(24px);
         }
         
-        button{
+        button, .button{
             font-size: rem-calc(18px);
             line-height: rem-calc(22px);
         }
@@ -933,6 +996,9 @@ p.call-out{
 
     .top-page .nav-home .menu .mobile-search{
         display: flex;
+    }
+    .highlight{
+        display: inline;
     }
     .announcement-bar{ display: none !important;}
     .top-page{
@@ -969,7 +1035,10 @@ p.call-out{
                 font-size: rem-calc(24px);
                 position: absolute;
                 right: rem-calc(20px);
-                top: rem-calc(10px);
+                top: rem-calc(13px);
+            }
+            #hide-list{
+                display: none;
             }
         }
         display: block;
@@ -1018,6 +1087,9 @@ p.call-out{
                 display: none;
             }
         }
+        #drop:checked ~ #show-list {
+            display: block;
+        }
         [id^=drop]:checked + ul {
             display: block !important;
             li a{
@@ -1033,6 +1105,12 @@ p.call-out{
             padding: 20px;
             .grade-choose{
                 width: 100%;
+                height: 53px;
+                select{
+                    font-size: rem-calc(18px);
+                    line-height: rem-calc(22px);
+                    color: $beaverBlue;
+                }
             }
         }
     }
@@ -1057,6 +1135,7 @@ p.call-out{
                     }
                     >button{
                         margin:0;
+                        color: $beaverWhite;
                     }
                 }
             }
@@ -1080,6 +1159,9 @@ p.call-out{
             }
             .describe{
                 padding: 40px 25px;
+                button{
+                    color: $beaverWhite;
+                }
             }
             .general-camp .panel-body{
                 padding-bottom: 30px;
