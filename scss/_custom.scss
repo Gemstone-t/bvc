@@ -860,6 +860,7 @@ p.call-out{
         .hero{
             .background {
                 top: 0;
+                img{width: 50vw;}
             }
             .main-content{
                 color: $beaverBlue;
@@ -898,7 +899,83 @@ p.call-out{
     }
 }
 
+#gallery-slider{
+    padding: 60px 100px;
+    background-color: $beaverWhite;
+    color: $beaverBlue;
+    .content{
+        img{
+            width: calc(100vw - 200px);
+        }
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .splide__arrows {
+        position: relative;
+        display: flex;
+        .splide__arrow{
+            width: 70px;
+            height: 100%;
+            position: relative;
+            background: transparent;
+            i {
+                font-size: rem-calc(53px) !important;
+                margin-right: 20px;
+            }
+        }
+        .splide__arrow--next{
+            right: 0;
+        }
+        .splide__arrow--prev{
+            left: 0;
+        }
+    }
+}
+
+.landing-page .learn-more-info img{
+    width: calc(50vw - 100px);
+}
+
+.indexing-page .top-page .hero .main-content{
+    margin-top: 90px;
+    padding: 40px 50px;
+    width: calc(100vw / 1400px * 917px);
+    background-color: $beaverWhite;
+    color: $beaverBlue;
+    button,
+    .button{
+        background-color: $beaverOrange;
+        color: $beaverBlue;
+    }
+    position: relative;
+    z-index: 1;
+}
+
+.indexing-page .image-content-group{
+    margin: -77.5px 0 60px 0;
+    padding: 95px 100px 65px 100px;
+}
 // Mobile scss 
+.filter_programs{
+    h3{color: $beaverWhite}
+    select{
+        width: 300px;
+        height: 55px;
+        color: $beaverBlue;
+        background-color: $beaverWhite;
+        font-family: satoshi-Black, sans-serif;
+        font-size: rem-calc(20px);
+        line-height: 100%;
+    }
+}
+
+.image-content .row-card{
+    background-color: $beaverWhite;
+    color: $beaverBlue;
+    img{width: calc((100vw - 200px) * 0.75);}
+}
 
 @media screen and (max-width: 767px){
 
@@ -1253,6 +1330,3 @@ p.call-out{
         }
     }
 }
-
-
-
