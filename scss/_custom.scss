@@ -975,7 +975,7 @@ body {
         img{width: calc((100vw - 200px) * 0.75);}
     }
     
-    @media screen and (max-width: 766px){
+    @include breakpoint(medium down){
         width: 100%;
         
         a.nav-link, a, label, text{
