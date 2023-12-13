@@ -1,5 +1,21 @@
-@import '_settings.scss';
+$-zf-size: null;
+$breakpoints: (
+  "small": 0,
+  "medium": 640px,
+  "large": 1024px,
+  "xlarge": 1200px,
+  "xxlarge": 1440px,
+);
+$breakpoints-hidpi: (
+  "hidpi-1": 1,
+  "hidpi-1-5": 1.5,
+  "hidpi-2": 2,
+  "retina": 2,
+  "hidpi-3": 3
+);
 
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large xlarge xxlarge);
 @font-face {
     font-family: generalSan-Medium;
     src: url("/css/font/GeneralSans-Medium.ttf");
