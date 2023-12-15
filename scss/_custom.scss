@@ -940,6 +940,15 @@ body {
     .indexing-page .image-content-group{
         margin: -77.5px 0 60px 0;
         padding: 95px 100px 65px 100px;
+        @include breakpoint(small down){
+            .row-card{
+                flex-direction: column-reverse;
+                img{width: 100%;}
+                .card-body{
+                    height: 140px;
+                }
+            }
+        }
     }
 
     /////basic-page
@@ -1046,6 +1055,11 @@ body {
             font-family: satoshi-Black, sans-serif;
             font-size: rem-calc(20px);
             line-height: 100%;
+        }
+        @include breakpoint(small down){
+            select{
+                width: 100%;
+            }
         }
     }
     
@@ -1535,6 +1549,25 @@ body {
                 img{height: 50vw;
                     width: 100%;
                 }
+            }
+        }
+
+        //// indexing-page
+        .indexing-page{
+            .main-content{
+                margin-top: 40px;
+                width: 100%;
+                padding: 30px 25px;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                .button{
+                    color: $beaverWhite;
+                }
+            }
+            .image-content-group{
+                margin: 50px 0;
+                padding: 30px 25px;
             }
         }
     }
