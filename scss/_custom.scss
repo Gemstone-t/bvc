@@ -832,7 +832,11 @@ body {
         .background {
             position: absolute;
             top: 0;
-            img{width: 50vw;}
+            right:0;
+            img{
+                height: 50vw;
+                width: 100%;
+            }
             z-index: -1;
         }
         .top-page{
@@ -897,7 +901,7 @@ body {
                 position: relative;
                 background: transparent;
                 i {
-                    font-size: rem-calc(53px) !important;
+                    font-size: rem-calc(53px);
                     margin-right: 20px;
                 }
             }
@@ -1491,6 +1495,46 @@ body {
             }
             .content{
                 padding: 30px 25px;
+            }
+        }
+
+        //// landing-page
+        .landing-page .background{
+            position: relative;
+
+        }
+        .landing-page{
+            .top-page .hero .main-content{
+                margin-top: 0;
+                padding: 30px 25px;
+                width: 100%;
+                .detail-button .button{
+                    color: $beaverWhite;
+                }
+            }
+        }
+        .image-content-group{
+            margin-top: 60px;
+            padding: 30px 25px;
+        }
+        #gallery-slider{
+            padding: 30px 25px;
+            .content img{width: 100%;}
+            .header{
+                .splide__arrows{
+                    i{font-size: rem-calc(40px);}
+                }
+            }
+        }
+        .learn-more-info{
+            .panel{
+                margin-top: 0;
+            }
+            .panel-body{
+                flex-direction: column-reverse;
+                img{height: 50vw;
+                    width: 100%;
+                }
             }
         }
     }

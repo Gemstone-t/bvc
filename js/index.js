@@ -14,13 +14,3 @@ new Splide( '#story-slider' , {
     perMove : 1,
 }).mount();
 
-$('#drop').on('change', function (){
-    if(this.checked){
-        $('#show-list').hide();
-        $('#hide-list').show();
-    }
-    else{
-        $('#show-list').show();
-        $('#hide-list').hide();
-    }
-}) 
