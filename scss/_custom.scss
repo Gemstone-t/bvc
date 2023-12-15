@@ -956,7 +956,11 @@ body {
         .background {
             position: absolute;
             top: 0;
-            img{width: 50vw;}
+            right: 0;
+            img{
+                width: 50vw;
+                height: 45vw;
+            }
             z-index: -1;
         }
         .top-page{
@@ -967,6 +971,7 @@ body {
                     background-color: $beaverWhite;
                     padding: 40px 50px;
                     width: calc(665px * (100vw / 1400px));
+                    min-width: 665px;
                     p.M{
                         margin: 15px 0;
                     }
@@ -976,7 +981,7 @@ body {
     }
     .basic-page{
         .basic-body{
-            margin: 70px 100px;
+            margin: calc(45vw - 540px) 100px 70px 100px;
             padding: 100px 100px;
             .content{
                 width: rem-calc(822px);
@@ -1025,7 +1030,7 @@ body {
             padding: 50px;
             width: 800px;
             background-color: $beaverWhite;
-            counter-reset: $beaverBlue;
+            color: $beaverBlue;
             .form-group{
                 width: 560px;
                 input,
@@ -1568,6 +1573,41 @@ body {
             .image-content-group{
                 margin: 50px 0;
                 padding: 30px 25px;
+            }
+        }
+
+        //// basic-page
+        .basic-page {
+            .background img{
+                width: 100vw;
+            }
+            .top-page .hero .main-content{
+                margin-top: 0;
+                width: 100%;
+                min-width: 0;
+                padding: 30px 25px;
+            }
+            .basic-body{
+                margin: 60px 0;
+                padding: 30px 25px;
+                .content{
+                    width: 100%;
+                    img{width: 100%;}
+                }
+            }
+        }
+        .summer_leadership{
+            padding: 0 25px;
+        }
+        .contact_us{
+            margin: 60px 25px;
+            padding-left: 0;
+            .contact_us-form{
+                padding: 30px 25px;
+                width: 100%;
+                .form-group{
+                    width: 100%;
+                }
             }
         }
     }
