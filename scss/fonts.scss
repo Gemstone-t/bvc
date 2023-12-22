@@ -1,40 +1,79 @@
 @font-face {
-    font-family: generalSan-Medium;
-    src: url("/css/font/GeneralSans-Medium.ttf");
+    font-family: 'Satoshi-Bold';
+    src: url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
 }
 
 @font-face {
-    font-family: generalSan-Semibold;
-    src: url("/css/font/GeneralSans-Semibold.ttf");
-} 
+    font-family: 'Satoshi-Black';
+    src: url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: pilcrow-Medium;
-    src: url("/css/font/PilcrowRounded-Medium.ttf");
-} 
+    font-family: 'Satoshi-Medium';
+    src: url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
+         url('/scss/fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: pilcrow-Semibold;
-    src: url("/css/font/PilcrowRounded-Semibold.ttf");
-} 
+    font-family: 'PilcrowRounded-Medium';
+    src: url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Medium.woff2') format('woff2'),
+         url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Medium.woff') format('woff'),
+         url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: satoshi-Black;
-    src: url("/css/font/Satoshi-Black.ttf");
-} 
+    font-family: 'PilcrowRounded-Semibold';
+    src: url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Semibold.woff2') format('woff2'),
+         url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Semibold.woff') format('woff'),
+         url('/scss/fonts/PilcrowRounded/Fonts/WEB/fonts/PilcrowRounded-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: satoshi-Bold;
-    src: url("/css/font/Satoshi-Bold.ttf");
-} 
-
+    font-family: 'Tanker-Regular';
+    src: url('/scss/fonts/Tanker/Fonts/WEB/fonts/Tanker-Regular.woff2') format('woff2'),
+         url('/scss/fonts/Tanker/Fonts/WEB/fonts/Tanker-Regular.woff') format('woff'),
+         url('/scss/fonts/Tanker/Fonts/WEB/fonts/Tanker-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: satoshi-Medium;
-    src: url("/css/font/Satoshi-Medium.ttf");
-} 
+    font-family: 'GeneralSans-Medium';
+    src: url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Medium.woff2') format('woff2'),
+         url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Medium.woff') format('woff'),
+         url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
 
 @font-face {
-    font-family: tanker-Regular;
-    src: url("/css/font/Tanker-Regular.ttf");
-} 
+    font-family: 'GeneralSans-Semibold';
+    src: url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Semibold.woff2') format('woff2'),
+         url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Semibold.woff') format('woff'),
+         url('/scss/fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }

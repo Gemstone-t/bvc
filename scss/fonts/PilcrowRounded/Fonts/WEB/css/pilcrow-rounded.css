@@ -1,0 +1,95 @@
+/**
+ * @license
+ *
+ * Font Family: Pilcrow Rounded
+ * Designed by: Satya Rajpurohit
+ * URL: https://www.fontshare.com/fonts/pilcrow-rounded
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Pilcrow Rounded Variable(Variable font)
+ * Pilcrow Rounded Regular
+ * Pilcrow Rounded Medium
+ * Pilcrow Rounded Semibold
+ * Pilcrow Rounded Bold
+ * Pilcrow Rounded Heavy
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 400.0;
+*
+* available axes:
+
+* 'wght' (range from 400.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: 'PilcrowRounded-Variable';
+  src: url('../fonts/PilcrowRounded-Variable.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Variable.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Variable.ttf') format('truetype');
+       font-weight: 400 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PilcrowRounded-Regular';
+  src: url('../fonts/PilcrowRounded-Regular.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Regular.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PilcrowRounded-Medium';
+  src: url('../fonts/PilcrowRounded-Medium.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Medium.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PilcrowRounded-Semibold';
+  src: url('../fonts/PilcrowRounded-Semibold.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Semibold.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PilcrowRounded-Bold';
+  src: url('../fonts/PilcrowRounded-Bold.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Bold.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PilcrowRounded-Heavy';
+  src: url('../fonts/PilcrowRounded-Heavy.woff2') format('woff2'),
+       url('../fonts/PilcrowRounded-Heavy.woff') format('woff'),
+       url('../fonts/PilcrowRounded-Heavy.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+

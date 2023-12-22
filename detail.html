@@ -8,104 +8,107 @@
     <link rel="stylesheet" href="css/app.css"><link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="utility-menu">
+        <a class="utility-nav" href="#">CampBrain</a>
+        <a class="utility-nav" href="#">Beaver Country Day School</a>
+        <a class="utility-nav" href="#">Request Info</a>
+      </div>
+      <nav class="nav-tool-bar">
+        <div class="nav-bar wrapper">
+          <div class="nav-home">
+            <div class="mobile-header">
+              <div id="logo">
+                <img src="/img/logo.png" />
+              </div>
+              <label for="drop" class="toggle">
+                <i id="show-list" class="bi bi-list bi-bold"></i>
+                <i id="hide-list" class="bi bi-x-lg bi-bold"></i>
+              </label>
+            </div>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+              <li>
+                <label for="drop-1" class="toggle">Programs <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
+                <a class="nav-link" href="#">Programs <i class="bi bi-chevron-down bi-bold"></i></a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                  <li><a href="#">PreK - K</a></li>
+                  <li><a href="/detail.html">Grades 1 - 2</a></li>
+                  <li><a href="#">Grades 3 - 4</a></li>
+                  <li><a href="#">Grades 5 - 8</a></li>
+                  <li><a href="#">Grades 8 - 10</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-2" class="toggle">Registration <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
+                <a class="nav-link" href="#">Registration <i class="bi bi-chevron-down bi-bold"></i></a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                  <li><a href="#">How to Register</a></li>
+                  <li><a href="#">Dates & Rates</a></li>
+                  <li><a href="#">2024 Program Availability</a></li>
+                  <li><a href="#">Registration FAQs</a></li>
+                  <li><a href="#">Visit us!</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-3" class="toggle">Info for Families <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
+                <a id="menu_info" class="nav-link" href="#">Info for Families <i class="bi bi-chevron-down bi-bold"></i></a>
+                <input type="checkbox" id="drop-3"/>
+                <ul>
+                  <li><a href="#">Program dates</a></li>
+                  <li><a href="#">Food and Nutrition</a></li>
+                  <li><a href="#">Transportation</a></li>
+                  <li><a href="#">Health, Safety and Security</a></li>
+                  <li><a href="#">Directions and Drop-off</a></li>
+                  <li><a href="#">Events Calender</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-4" class="toggle">About Beaver Summer Camp <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
+                <a id="menu_about" class="nav-link" href="#">About Beaver Summer Camp <i class="bi bi-chevron-down bi-bold"></i></a>
+                <input type="checkbox" id="drop-4"/>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Leadership & Staff</a></li>
+                  <li><a href="#">Program Goals</a></li>
+                  <li><a href="#">Facilities</a></li>
+                  <li><a href="#">Working at Beaver Camp</a></li>
+                  <li><a href="#">Job Opportunities</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul> 
+              </li>
+              <div class="mobile-search">
+                <input placeholder="Search" name="search-key" id="mobile-search-key" />
+                <button class="button"><i class="bi bi-search"></i></button>
+              </div>
+            </ul>
+          </div>
+          <div class="search-bar text-right">
+            <label class="search-icon d-center" for="chk-search">
+              <i class="bi bi-search"></i>
+            </label>
+          </div>
+        </div>
+        <div class="search-line">
+          <input type="checkbox" id="chk-search"/>
+          <div class="search-input">
+            <button class="button">Go</button>
+            <input placeholder="Enter Search" class="medium-3" name="search-key" id="search-key" />
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="detail-page">
       <section class="top-page">
         <div class="hero">
-          <div class="utility-menu">
-            <a class="utility-nav" href="#">CampBrain</a>
-            <a class="utility-nav" href="#">Beaver Country Day School</a>
-            <a class="utility-nav" href="#">Request Info</a>
-          </div>
-          <div class="nav-bar wrapper">
-            <nav class="nav-home">
-              <div class="mobile-header">
-                <div id="logo">
-                  <img src="/img/logo.png" />
-                </div>
-                <label for="drop" class="toggle">
-                  <i id="show-list" class="bi bi-list bi-bold"></i>
-                  <i id="hide-list" class="bi bi-x-lg bi-bold"></i>
-                </label>
-              </div>
-              <input type="checkbox" id="drop" />
-              <ul class="menu">
-                <li>
-                  <label for="drop-1" class="toggle">Programs <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
-                  <a class="nav-link" href="#">Programs <i class="bi bi-chevron-down bi-bold"></i></a>
-                  <input type="checkbox" id="drop-1"/>
-                  <ul>
-                    <li><a href="#">PreK - K</a></li>
-                    <li><a href="/detail.html">Grades 1 - 2</a></li>
-                    <li><a href="#">Grades 3 - 4</a></li>
-                    <li><a href="#">Grades 5 - 8</a></li>
-                    <li><a href="#">Grades 8 - 10</a></li>
-                  </ul> 
-                </li>
-                <li>
-                  <label for="drop-2" class="toggle">Registration <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
-                  <a class="nav-link" href="#">Registration <i class="bi bi-chevron-down bi-bold"></i></a>
-                  <input type="checkbox" id="drop-2"/>
-                  <ul>
-                    <li><a href="#">How to Register</a></li>
-                    <li><a href="#">Dates & Rates</a></li>
-                    <li><a href="#">2024 Program Availability</a></li>
-                    <li><a href="#">Registration FAQs</a></li>
-                    <li><a href="#">Visit us!</a></li>
-                  </ul> 
-                </li>
-                <li>
-                  <label for="drop-3" class="toggle">Info for Families <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
-                  <a class="nav-link" href="#">Info for Families <i class="bi bi-chevron-down bi-bold"></i></a>
-                  <input type="checkbox" id="drop-3"/>
-                  <ul>
-                    <li><a href="#">Program dates</a></li>
-                    <li><a href="#">Food and Nutrition</a></li>
-                    <li><a href="#">Transportation</a></li>
-                    <li><a href="#">Health, Safety and Security</a></li>
-                    <li><a href="#">Directions and Drop-off</a></li>
-                    <li><a href="#">Events Calender</a></li>
-                  </ul> 
-                </li>
-                <li>
-                  <label for="drop-4" class="toggle">About Beaver Summer Camp <i class="bi bi-chevron-down bi-bold pull-right"></i></label>
-                  <a class="nav-link" href="#">About Beaver Summer Camp <i class="bi bi-chevron-down bi-bold"></i></a>
-                  <input type="checkbox" id="drop-4"/>
-                  <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Leadership & Staff</a></li>
-                    <li><a href="#">Program Goals</a></li>
-                    <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Working at Beaver Camp</a></li>
-                    <li><a href="#">Job Opportunities</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul> 
-                </li>
-                <div class="mobile-search">
-                  <input placeholder="Search" name="search-key" id="mobile-search-key" />
-                  <button class="button"><i class="bi bi-search"></i></button>
-                </div>
-              </ul>
-            </nav>
-            <div class="search-bar text-right">
-              <label class="search-icon d-center" for="chk-search">
-                <i class="bi bi-search"></i>
-              </label>
-            </div>
-          </div>
-          <div class="search-line">
-            <input type="checkbox" id="chk-search"/>
-            <div class="search-input">
-              <button class="button">Go</button>
-              <input placeholder="Enter Search" class="large-3" name="search-key" id="search-key" />
-            </div>
-          </div>
           <div class="background">
             <img src='/img/detail/detail_imgae.png' />
           </div>
           <div class="prev-next-btn grid-x">
-            <div class="prev-btn small-6"><i class="bi bi-arrow-left-circle bi-bold"></i>Prev</div>
-            <div class="next-btn small-6">Next<i class="bi bi-arrow-right-circle bi-bold"></i></div>
+            <div class="prev-btn small-6 d-center"><i class="bi bi-arrow-left-circle"></i><span>Prev</span></div>
+            <div class="next-btn small-6 d-center"><span>Next</span><i class="bi bi-arrow-right-circle"></i></div>
           </div>
         </div>
       </section>
@@ -113,7 +116,7 @@
         <div class="wrapper">
           <div class="hero-content grid-x">
             <div class="cell medium-12 large-8">
-              <article class="main-content margin-right-1">
+              <article class="main-content">
                 <div class="pretitle">
                   <p class="eyebrow margin-right-2">General Camp</p>
                   <p class="eyebrow">Grades 1 & 2</p>
@@ -133,8 +136,8 @@
               </article>
             </div>
             <div class="cell medium-12 large-4">
-              <article class="sub-content">
-                <div class="panel">
+              <article class="sub-content margin-left-1">
+                <div>
                   <p class="eyebrow">Grades</p>
                   <p class="XS">Children entering grades 1 and 2 in September 2023</p>
                 </div>
@@ -436,8 +439,8 @@
                 <h3 class="alt">Swimming, sports, fitness & Games</h3>
               </div>
               <div class="content">
-                <div class="grid-x">
-                  <div class="card text-center small-12 medium-6 large-3">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -446,7 +449,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -455,7 +458,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -464,7 +467,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -473,7 +476,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -482,7 +485,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -491,7 +494,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -500,7 +503,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/8.png" />
                     <div class="card-body d-center">
                       <div>
@@ -509,7 +512,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/sport_game/9.png" />
                     <div class="card-body d-center">
                       <div>
@@ -526,8 +529,8 @@
                 <h3 class="alt">Performing & visual Arts</h3>
               </div>
               <div class="content">
-                <div class="grid-x">
-                  <div class="card text-center small-12 medium-6 large-3">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -536,7 +539,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -545,7 +548,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -554,7 +557,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -563,7 +566,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -572,7 +575,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -581,7 +584,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -590,7 +593,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/performing_art/8.png" />
                     <div class="card-body d-center">
                       <div>
@@ -607,8 +610,8 @@
                 <h3 class="alt">Adventure Challenge</h3>
               </div>
               <div class="content">
-                <div class="grid-x">
-                  <div class="card text-center small-12 medium-6 large-3">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/challenge/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -617,7 +620,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/challenge/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -626,7 +629,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/challenge/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -643,8 +646,8 @@
                 <h3 class="alt">Even more fun!</h3>
               </div>
               <div class="content">
-                <div class="grid-x">
-                  <div class="card text-center small-12 medium-6 large-3">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -653,7 +656,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -662,7 +665,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -671,7 +674,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -680,7 +683,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -689,7 +692,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -698,7 +701,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card text-center small-12 medium-6 large-3">
+                  <div class="cell card text-center small-12 medium-6 large-3">
                     <img src="/img/detail/activities/other/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -715,37 +718,41 @@
       </section>
       <section class="learn-more-info margin-top-3">
         <div class="wrapper">
-          <div class="row grid-x grid-margin-x">
-            <div class="cell large-6 panel">
-              <div class="title">
-                <h2>Extended Day</h2>
-              </div>
-              <div class="detail margin-top-2">
-                <p class="M">
-                  Want more camp? You've got it. Our weekly Extended Day programs are available to all Middle Campers for an additional fee.
-                </p>
-                <p>
-                  7:30-8:30 am - Drop off your camper up to an hour earlier than the regular drop-off at 8:30 am.
-                </p>
-                <p>  
-                  4:00-6:00 pm - Extend your camper's day as late as possible to give them full access to more activities.
-                </p>
-              </div>
-              <div class="detail-button margin-top-2">
-                <button class="button">Learn more about Extended Day</button>
+          <div class="row grid-x">
+            <div class="cell large-6 left-panel">
+              <div class="panel">
+                <div class="title">
+                  <h2>Extended Day</h2>
+                </div>
+                <div class="detail margin-top-2">
+                  <p class="M">
+                    Want more camp? You've got it. Our weekly Extended Day programs are available to all Middle Campers for an additional fee.
+                  </p>
+                  <p class="M">
+                    7:30-8:30 am - Drop off your camper up to an hour earlier than the regular drop-off at 8:30 am.
+                  </p>
+                  <p class="M">  
+                    4:00-6:00 pm - Extend your camper's day as late as possible to give them full access to more activities.
+                  </p>
+                </div>
+                <div class="detail-button margin-top-2">
+                  <button class="button">Learn more about Extended Day</button>
+                </div>
               </div>
             </div>
-            <div class="cell large-6 panel">
-              <div class="title">
-                <h2>Transportation Options</h2>
-              </div>
-              <div class="detail margin-top-2">
-                <p class="M">
-                  Why not let someone else be the driver? We'll safely shuttle your camper to and from Beaver by bus.
-                </p>
-              </div>
-              <div class="detail-button margin-top-2">
-                <button class="button">Learn more about Transporation</button>
+            <div class="cell large-6 right-panel">
+              <div class="panel">
+                <div class="title">
+                  <h2>Transportation Options</h2>
+                </div>
+                <div class="detail margin-top-2">
+                  <p class="M">
+                    Why not let someone else be the driver? We'll safely shuttle your camper to and from Beaver by bus.
+                  </p>
+                </div>
+                <div class="detail-button margin-top-2">
+                  <button class="button">Learn more about Transporation</button>
+                </div>
               </div>
             </div>
           </div>
@@ -885,7 +892,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
     </main>
     
     <footer class="footer">

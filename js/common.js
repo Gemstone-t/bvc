@@ -7,4 +7,21 @@ $('#drop').on('change', function (){
         $('#show-list').show();
         $('#hide-list').hide();
     }
-}) 
+});
+
+function adjustStyles(){
+    screenWidth = window.innerWidth;
+
+    if(screenWidth >= 1024 && screenWidth < 1320){
+        $('#menu_about').html("About <i class=\"bi bi-chevron-down bi-bold\"></i>");
+        $('#menu_info').html("Info <i class=\"bi bi-chevron-down bi-bold\"></i>");
+    }
+    else {
+        $('#menu_about').html("About Beaver Summer Camp <i class=\"bi bi-chevron-down bi-bold\"></i>");
+        $('#menu_info').html("Info for Families <i class=\"bi bi-chevron-down bi-bold\"></i>");
+    }
+}
+
+adjustStyles();
+
+window.addEventListener('resize', adjustStyles);
