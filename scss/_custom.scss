@@ -359,7 +359,6 @@ body {
                     margin: 0;
                     height: rem-calc(50px);
                     width: rem-calc(70px);
-                    font-size: rem-calc(20px);
                 }
             }
         }
@@ -367,68 +366,68 @@ body {
         .photo-slider{
             margin-top: 30px;
         }
-        .about-overview{
-            .panel{
-                margin-top: 50px
+    }
+    .about-overview{
+        margin-bottom: 100px;
+        .panel{
+            margin-top: 50px
+        }
+        .left-pic{
+            left: 0;
+            margin-top: rem-calc(150px);
+            z-index: -1;
+            img{
+                width: 20vw;
             }
-            .left-pic{
-                left: 0;
-                margin-top: rem-calc(150px);
-                z-index: -1;
-                img{
-                    width: 20vw;
-                }
+        }
+        .right-pic{
+            display: flex;
+            flex-direction: row-reverse;
+            height: 107%;
+            align-items: flex-end;
+            img{
+                width: 20vw;
+                height: 24vw;
             }
-            .right-pic{
-                display: flex;
-                flex-direction: row-reverse;
-                margin-top: calc(480px - (100vw - 1400px) * 0.4);
-                img{
-                    width: 20vw;
-                    height: 24vw;
-                }
-            }
+        }
 
-            .under{
-                z-index: -1;
+        .under{
+            z-index: -1;
+        }
+        
+        .overview-panel{
+            padding: 50px 75px;
+            background-color: $beaverWhite;
+            color: $beaverBlue;
+            p{
+                margin: 26px 0;
             }
-            
-            .overview-panel{
-                padding: 50px 75px;
-                background-color: $beaverWhite;
-                color: $beaverBlue;
-                p{
-                    margin: 26px 0;
+            .link-btn {
+                a {
+                    margin-right: 20px;
+                    color: $beaverBlue;
+                    text-decoration: underline;
                 }
-                .link-btn {
-                    a {
-                        margin-right: 20px;
-                        color: $beaverBlue;
-                        text-decoration: underline;
-                    }
-                    button {
-                        margin: 0 20px;
-                        background-color: $beaverOrange;
-                        color: $beaverBlue;
-                    }
-                }
-            }
-    
-            .reg-info-panel{
-                padding: 50px;
-                background-color: $beaverBlue;
-                color: $beaverWhite;
-                h3{
-                    margin-bottom: 15px;
-                }
-                p{
-                    margin: 0;
+                button {
+                    margin: 0 20px;
+                    background-color: $beaverOrange;
+                    color: $beaverBlue;
                 }
             }
         }
-    
-    }
-        
+
+        .reg-info-panel{
+            padding: 50px;
+            background-color: $beaverBlue;
+            color: $beaverWhite;
+            h3{
+                margin-bottom: 15px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    } 
         
     .camp-program-blocks{
         .general-camp{
@@ -454,9 +453,7 @@ body {
                 margin: 20px 0 0 0;
                 background-color: $beaverYellow;
                 color: $beaverBlue;
-                padding: 10px;
-                height: 55px;
-                width: 278px;
+                padding: 20px;
             }
         }
         .panel-body{
@@ -470,7 +467,7 @@ body {
                     margin: 0;
                 }
                 .card-body{
-                    height: rem-calc(140px);
+                    height: 10vw;
                 }
             }
             p.call-out {
@@ -487,7 +484,7 @@ body {
             .camp-title{
                 display: flex;
                 flex-direction: column-reverse;
-                padding: 0 52px;
+                padding: 0 calc(52px * (100vw / 1400px));
                 background-color: $beaverBlue;
             }
             .pic-panel{
@@ -776,11 +773,12 @@ body {
                     background-color: $beaverWhite;
                     h3{margin:0}
                     p{
-                        margin-top: 10px;
+                        margin: 10px 0 0 0;
                     }
                     .card-body{
                         padding: 20px;
-                        height: rem-calc(140px);
+                        height: 10vw;
+                        min-height: 140px;
                     }
                 }
     
@@ -844,7 +842,8 @@ body {
             background-color: $beaverYellow;
             .card{
                 .card-body{
-                    height: 140px;
+                    height: 10vw;
+                    min-height: 140px;
                 }
             }
         }
@@ -899,7 +898,9 @@ body {
             margin-bottom: 20px;
         }
         .card .card-body{
-            height: 140px;
+            height: 10vw;
+            min-height: 140px;
+            p{margin: 0;}
         }
     }
     
@@ -945,8 +946,8 @@ body {
         .panel-body{
             display: flex;
             justify-content: space-between;
-            height: 500px;
-            img{height: 500px;}
+            height: calc(100vw * 500px / 1400px);
+            img{height: 100%;}
             background-color: $beaverWhite;
         }
     }
@@ -1097,9 +1098,6 @@ body {
             height: 55px;
             color: $beaverBlue;
             background-color: $beaverWhite;
-            font-family: Satoshi-Black, sans-serif;
-            font-size: rem-calc(20px);
-            line-height: 100%;
         }
         @include breakpoint(small down){
             select{
@@ -1125,6 +1123,8 @@ body {
                 img{
                     width: 100%;
                     height: 100%;
+                    max-width: 500px !important;
+                    max-height: 500px;
                 }
             }
         }
@@ -1363,33 +1363,31 @@ body {
             .photo-slider{
                 margin: 20px 0;
             }
-            .about-overview{
-                display: flex;
-                .left-pic,
-                .right-pic{
-                    display:none;
-                }
-                .overview-panel{
-                    padding: 20px;
-                    .link-btn{
-                        display: flex;
-                        flex-direction: column-reverse;
-                        > a{
-                            margin:10px 0;
-                        }
-                        >button{
-                            margin:0;
-                            color: $beaverWhite;
-                        }
+        }
+        .about-overview{
+            display: flex;
+            .left-pic,
+            .right-pic{
+                display:none;
+            }
+            .overview-panel{
+                padding: 20px;
+                .link-btn{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    > a{
+                        margin:10px 0;
+                    }
+                    >button{
+                        margin:0;
+                        color: $beaverWhite;
                     }
                 }
-                .reg-info-panel{
-                    padding: 25px;
-                }
             }
-            
+            .reg-info-panel{
+                padding: 25px;
+            }
         }
-    
         .camp-program-blocks {
             .panel-body{
                 padding: 30px 25px;
