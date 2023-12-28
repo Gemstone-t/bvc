@@ -182,6 +182,10 @@ body {
             height: rem-calc(73px);
             background-color: $beaverWhite;
         }
+        .menu-bar{
+            display: flex;
+            align-items: center;
+        }
         .nav-home{
             display: flex;
             margin:0;
@@ -208,7 +212,7 @@ body {
             .menu {
                 float: left;
                 padding:0;
-                margin: rem-calc(16px) 0 0 0;
+                margin: 0;
                 ul{
                     list-style: none;
                 }
@@ -608,7 +612,7 @@ body {
                     align-items: flex-start;
                     flex-direction: column;
                     a{
-                        font-size:rem-calc(17px) !important;
+                        font-size:rem-calc(17px);
                         margin-top: 10px;
                         text-decoration: none;
                     }
@@ -1235,12 +1239,16 @@ body {
         .nav-bar .search-bar{
             display:none !important;
         }
+        .search-line{display: none;}
         .nav-tool-bar{
             padding: 0;
             .nav-bar{
                 margin: 0;
                 display: block;
                 height: rem-calc(56px);
+            }
+            .menu-bar{
+                display: block;
             }
             .nav-home{
                 #logo {
