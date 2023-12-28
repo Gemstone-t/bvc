@@ -10,7 +10,7 @@ $('#drop').on('change', function () {
 
 function adjustStyles () {
   screenWidth = window.innerWidth
-
+  //   console.log(screenWidth)
   if (screenWidth >= 1024 && screenWidth < 1320) {
     $('#menu_about').html('About <i class="bi bi-chevron-down bi-bold"></i>')
     $('#menu_info').html('Info <i class="bi bi-chevron-down bi-bold"></i>')
@@ -66,7 +66,7 @@ function adjustStyles () {
     }
   ]
 
-  if (screenWidth > 1024) {
+  if (screenWidth >= 1024) {
     t = screenWidth / 1400
 
     let element
