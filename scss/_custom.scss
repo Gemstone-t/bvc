@@ -1,3 +1,7 @@
+@function vw-to-rem($value) {
+  @return ($value / 54px) * 1rem;
+}
+
 body {
     background-color: $beaverLightOrange !important;
     // width: 1400px;
@@ -55,92 +59,92 @@ body {
     }
     
     h1{
-        font-size: rem-calc(54px);
-        line-height: rem-calc(60px);
+        font-size: calc(100vw / 1400px * 54px);
+        line-height: calc(100vw / 1400px * 60px);
     }        
     h2{
-        font-size: rem-calc(46px);
-        line-height: rem-calc(48px);
+        font-size: calc(100vw / 1400px * 46px);
+        line-height: calc(100vw / 1400px * 48px);
     }  
     h2.alt{
-        font-size: rem-calc(46px);
-        line-height: rem-calc(50px);
+        font-size: calc(100vw / 1400px * 46px);
+        line-height: calc(100vw / 1400px * 50px);
     }    
     h3{
-        font-size: rem-calc(30px);
-        line-height: rem-calc(32px);
+        font-size: calc(100vw / 1400px * 30px);
+        line-height: calc(100vw / 1400px * 32px);
     }  
     h3.alt{
-        font-size: rem-calc(35px);
-        line-height: rem-calc(35px);
+        font-size: calc(100vw / 1400px * 35px);
+        line-height: calc(100vw / 1400px * 35px);
     }
     h4{
-        font-size: rem-calc(23px);
-        line-height: rem-calc(24px);
+        font-size: calc(100vw / 1400px * 23px);
+        line-height: calc(100vw / 1400px * 24px);
     }    
     h5{
-        font-size: rem-calc(19px);
-        line-height: rem-calc(21px);
+        font-size: calc(100vw / 1400px * 19px);
+        line-height: calc(100vw / 1400px * 21px);
     }
     a.nav-link{
-        font-size: rem-calc(20px);
-        line-height: rem-calc(25px);
+        font-size: calc(100vw / 1400px * 20px);
+        line-height: calc(100vw / 1400px * 25px);
         text-decoration: none;
     }
     a.utility-nav{
-        font-size: rem-calc(15px);
+        font-size: calc(100vw / 1400px * 15px);
         line-height: 100%;
         text-decoration: underline;
     }
     p.eyebrow{
-        font-size: rem-calc(22px);
-        line-height: rem-calc(22px);
+        font-size: calc(100vw / 1400px * 22px);
+        line-height: calc(100vw / 1400px * 22px);
     }
     button,
     .button{
         font-family: Satoshi-Black, sans-serif;
-        font-size: rem-calc(20px);
+        font-size: calc(100vw / 1400px * 20px);
         line-height: 100%;
         margin: 0;
     }
     p.XXL{
-        font-size: rem-calc(50px);
-        line-height: rem-calc(65px);
+        font-size: calc(100vw / 1400px * 50px);
+        line-height: calc(100vw / 1400px * 65px);
     }
     p.XL {
-        font-size: rem-calc(26px);
-        line-height: rem-calc(32px);
+        font-size: calc(100vw / 1400px * 26px);
+        line-height: calc(100vw / 1400px * 32px);
     }
     p.L{
-        font-size: rem-calc(24px);
-        line-height: rem-calc(35px);
+        font-size: calc(100vw / 1400px * 24px);
+        line-height: calc(100vw / 1400px * 35px);
     }
     p.M,
     a {
-        font-size: rem-calc(20px);
-        line-height: rem-calc(27px);
+        font-size: calc(100vw / 1400px * 20px);
+        line-height: calc(100vw / 1400px * 27px);
     }
     p.S{
-        font-size: rem-calc(18px);
-        line-height: rem-calc(27px);
+        font-size: calc(100vw / 1400px * 18px);
+        line-height: calc(100vw / 1400px * 27px);
     }
     p.XS{
-        font-size: rem-calc(16px);
-        line-height: rem-calc(19px);
+        font-size: calc(100vw / 1400px * 16px);
+        line-height: calc(100vw / 1400px * 19px);
     }
     p.call-out{
-        font-size: rem-calc(39px);
-        line-height: rem-calc(39px);
+        font-size: calc(100vw / 1400px * 39px);
+        line-height: calc(100vw / 1400px * 39px);
     }
     a.text-link{
-        font-size: rem-calc(20px);
-        line-height: rem-calc(27px);
+        font-size: calc(100vw / 1400px * 20px);
+        line-height: calc(100vw / 1400px * 27px);
         text-decoration: underline;
     }
     select,
     label,
     input{
-        font-size: rem-calc(20px);
+        font-size: calc(100vw / 1400px * 20px);
         line-height: 100%;
     }
     
@@ -241,8 +245,8 @@ body {
                     display:list-item;
                     position: relative;
                     a{
-                        font-size: rem-calc(17px);
-                        line-height: rem-calc(25px);
+                        font-size: calc(100vw / 1400px * 17px);
+                        line-height: calc(100vw / 1400px * 25px);
                     }
                 }
     
@@ -595,7 +599,7 @@ body {
                 display: inline;
                 a,button{margin: 10px}
                 a{
-                    font-size: rem-calc(15px);
+                    font-size: calc(100vw / 1400px * 15px);
                     line-height: 100%;
                 }
                 .yellow{
@@ -612,7 +616,7 @@ body {
                     align-items: flex-start;
                     flex-direction: column;
                     a{
-                        font-size:rem-calc(17px);
+                        font-size:calc(100vw / 1400px * 17px);
                         margin-top: 10px;
                         text-decoration: none;
                     }
@@ -639,7 +643,7 @@ body {
         label.copyright{
             font-family: GeneralSans-Medium, sans-serif;
             font-weight: 400;
-            font-size: rem-calc(14px);
+            font-size: calc(100vw / 1400px * 14px);
         }
     }
 
