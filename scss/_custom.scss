@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
     color: $beaverBlue;
     font-family: Satoshi-Bold, sans-serif;
+    font-weight: 700;
     font-size: rem-calc(20px);
     line-height: 100%;
 
@@ -32,30 +33,37 @@ body {
     
     a.text-link, a.nav-link, a.utility-nav, a, label, select, text{
         font-family: Satoshi-Bold, sans-serif;
+        font-weight: 700;
     }
         
     h1,h2,h3,h4{
         font-family: Satoshi-Black, sans-serif;
+        font-weight: 900;
     }
         
     p.XXL,p.L,p.M,p.S,p.XS{
         font-family: Satoshi-Medium, sans-serif;
+        font-weight: 500;
     }
         
     p.XL{
         font-family: PilcrowRounded-Medium, sans-serif;
+        font-weight: 500;
     }
         
     p.eyebrow{
         font-family: PilcrowRounded-Semibold, sans-serif;
+        font-weight: 600;
     }
     
     h2.alt,h3.alt,h5, p.call-out{
         font-family: Tanker-Regular, sans-serif;
+        font-weight: 400;
     }
         
     footer label{
         font-family: GeneralSans-Medium, sans-serif;
+        font-weight: 500;
     }
     
     h1{
@@ -103,6 +111,7 @@ body {
     button,
     .button{
         font-family: Satoshi-Black, sans-serif;
+        font-weight: 900;
         font-size: calc(100vw / 1400px * 20px);
         line-height: 100%;
         margin: 0;
@@ -673,6 +682,7 @@ body {
                     }
                     .next-btn i{margin-left: 5px;}
                     font-family: GeneralSans-Semibold, sans-serif;
+                    font-weight: 600;
                     padding: 24px 20px;
                     width: 174px;
                     height: 69px;
@@ -1068,6 +1078,7 @@ body {
         }
         td{
             font-family: Satoshi-Medium, sans-serif;
+            font-weight: 500;
         }
         tbody tr:nth-child(even){
             background-color: $beaverLightOrange;
@@ -1144,30 +1155,37 @@ body {
         
         a.nav-link, a.text-link, a, label, text{
             font-family: Satoshi-Bold, sans-serif;
+            font-weight: 700;
         }
         
         h1,h2,h3,h4,button,.button{
             font-family: Satoshi-Black, sans-serif;
+            font-weight: 900;
         }
         
         p.M,
         p.L{
             font-family: Satoshi-Medium, sans-serif;
+            font-weight: 500;
         }
         
         p.XL{
             font-family: PilcrowRounded-Medium, sans-serif;
+            font-weight: 500;
         }
         
         p.eyebrow{
             font-family: PilcrowRounded-Semibold, sans-serif;
+            font-weight: 600;
         }
         
         h2.alt, p.call-out{
             font-family: Tanker-Regular, sans-serif;
+            font-weight: 400;
         }
         footer label{
             font-family: GeneralSans-Medium, sans-serif;
+            font-weight: 500;
         }
         
         h1 {
