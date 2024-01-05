@@ -27,3 +27,10 @@ function adjustStyles () {
 adjustStyles()
 
 window.addEventListener('resize', adjustStyles)
+
+newLocal = $('.search-bar')[0].addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    console.log($('#chk-search')[0].checked)
+    $('#chk-search')[0].checked = !$('#chk-search')[0].checked
+  }
+})

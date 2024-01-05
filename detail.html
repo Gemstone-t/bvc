@@ -13,13 +13,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="utility-menu">
-        <a class="utility-nav" href="#">CampBrain</a>
-        <a class="utility-nav" href="#">Beaver Country Day School</a>
-        <a class="utility-nav" href="#">Request Info</a>
+      <div class="wrapper">
+        <div class="utility-menu">
+          <div>
+            <a class="utility-nav" href="#">Request Info</a>
+            <a class="utility-nav" href="#">Beaver Country Day School</a>
+            <a class="utility-nav" href="#">CampBrain</a>
+          </div>
+        </div>
       </div>
-      <nav class="nav-tool-bar">
-        <div class="nav-bar wrapper">
+      <nav class="nav-tool-bar wrapper">
+        <div class="nav-bar">
           <div class="nav-home">
             <div class="mobile-header">
               <div id="logo">
@@ -34,10 +38,16 @@
               <input type="checkbox" id="drop" />
               <ul class="menu">
                 <li>
-                  <label for="drop-1" class="toggle"
-                    >Programs
-                    <i class="bi bi-chevron-down bi-bold pull-right"></i
-                  ></label>
+                  <label
+                    for="drop-1"
+                    class="toggle"
+                    aria-controls="submenu-about"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    Programs
+                    <i class="bi bi-chevron-down bi-bold pull-right"></i>
+                  </label>
                   <a class="nav-link" href="#"
                     >Programs <i class="bi bi-chevron-down bi-bold"></i
                   ></a>
@@ -116,7 +126,7 @@
               </ul>
             </div>
           </div>
-          <div class="search-bar text-right">
+          <div class="search-bar text-right" tabindex="0">
             <label class="search-icon d-center" for="chk-search">
               <i class="bi bi-search"></i>
             </label>
@@ -125,13 +135,13 @@
         <div class="search-line">
           <input type="checkbox" id="chk-search" />
           <div class="search-input">
-            <button class="button d-center">Go</button>
             <input
               placeholder="Enter Search"
               class="medium-3"
               name="search-key"
               id="search-key"
             />
+            <button class="button d-center">Go</button>
           </div>
         </div>
       </nav>
@@ -185,7 +195,9 @@
                   </p>
                 </div>
                 <div class="detail-button">
-                  <button class="button">See Dates & Rates</button>
+                  <button class="button" onclick="window.location.href='#'">
+                    See Dates & Rates
+                  </button>
                 </div>
               </article>
             </div>
@@ -213,141 +225,101 @@
           </div>
         </div>
       </section>
-      <section class="jump-to-section margin-top-1">
+      <section class="margin-top-1">
         <div class="wrapper">
-          <h3>Jump to Section</h3>
-          <div class="jump-to">
-            <a class="text-link" href="#">What's in a day?</a>
-            <a class="text-link" href="#">Activities</a>
-            <a class="text-link" href="#">Extended Day & Transporation</a>
-            <a class="text-link" href="#">Why Middle Camp?</a>
-            <a class="text-link" href="#">Directors</a>
-            <a class="text-link" href="#">Related Programs</a>
+          <div class="jump-to-section">
+            <h3>Jump to Section</h3>
+            <ul class="jump-to">
+              <li><a class="text-link" href="#">What's in a day?</a></li>
+              <li><a class="text-link" href="#">Activities</a></li>
+              <li>
+                <a class="text-link" href="#">Extended Day & Transporation</a>
+              </li>
+              <li><a class="text-link" href="#">Why Middle Camp?</a></li>
+              <li><a class="text-link" href="#">Directors</a></li>
+              <li><a class="text-link" href="#">Related Programs</a></li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="sample-day">
+      <section>
         <div class="wrapper">
-          <div class="header">
-            <h2>What's in a day?</h2>
-            <p class="XL">
-              Check out a sample day in the life of a Middle Camper. Lobortis
-              egestas viverra ipsum maecenas. Justo elementum consectetur.
-            </p>
-          </div>
-          <div class="content">
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="no-pic grid-x">
-                  <div class="small-12 medium-12 large-7 text-center">
-                    <div class="time">
-                      <p class="eyebrow">8:30 - 9 am</p>
-                    </div>
-                    <div class="title">
-                      <h3>Drop-off</h3>
-                    </div>
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <a class="text-link" href="#"
-                        >See transportation options</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-2 left grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/1.png" />
-                    <img src="/img/detail/sample_days/2.png" />
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
+          <div class="sample-day">
+            <div class="header">
+              <h2>What's in a day?</h2>
+              <p class="XL">
+                Check out a sample day in the life of a Middle Camper. Lobortis
+                egestas viverra ipsum maecenas. Justo elementum consectetur.
+              </p>
+            </div>
+            <div class="content">
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="no-pic grid-x">
+                    <div class="small-12 medium-12 large-7 text-center">
                       <div class="time">
                         <p class="eyebrow">8:30 - 9 am</p>
                       </div>
                       <div class="title">
                         <h3>Drop-off</h3>
                       </div>
-                      <div class="main">
-                        <p class="M">Sports or Woodworking</p>
-                        <p class="M">
-                          You can also add additional text that lets the
-                          visitors know that there are other electives on other
-                          days and that this is just a sample day.
-                        </p>
-                      </div>
-                      <div class="link">
-                        <a class="text-link" href="#">See all electives</a>
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <a class="text-link" href="#"
+                          >See transportation options</a
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="no-pic grid-x">
-                  <div class="small-12 medium-12 large-7 text-center">
-                    <div class="time">
-                      <p class="eyebrow">10 - 10:15 am</p>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-2 left grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/1.png" />
+                      <img src="/img/detail/sample_days/2.png" />
                     </div>
-                    <div class="title">
-                      <h3>Snack</h3>
-                    </div>
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <p class="M">
-                        Venenatis mi rutrum. Sem et faucibus cursus commodo
-                        varius.
-                      </p>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">8:30 - 9 am</p>
+                        </div>
+                        <div class="title">
+                          <h3>Drop-off</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">Sports or Woodworking</p>
+                          <p class="M">
+                            You can also add additional text that lets the
+                            visitors know that there are other electives on
+                            other days and that this is just a sample day.
+                          </p>
+                        </div>
+                        <div class="link">
+                          <a class="text-link" href="#">See all electives</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-2 left grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/3.png" />
-                    <img src="/img/detail/sample_days/4.png" />
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="no-pic grid-x">
+                    <div class="small-12 medium-12 large-7 text-center">
                       <div class="time">
-                        <p class="eyebrow">10:15 - 11 am</p>
+                        <p class="eyebrow">10 - 10:15 am</p>
                       </div>
                       <div class="title">
-                        <h3>Camper's Choice</h3>
-                      </div>
-                      <div class="main">
-                        <p class="M">Archery or Music</p>
+                        <h3>Snack</h3>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-1 right grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/5.png" />
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <div class="time">
-                        <p class="eyebrow">11:15 - 12 pm</p>
-                      </div>
-                      <div class="title">
-                        <h3>Swim Lessons</h3>
-                      </div>
-                      <div class="main">
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
                         <p class="M">
                           Venenatis mi rutrum. Sem et faucibus cursus commodo
                           varius.
@@ -356,157 +328,217 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-1 left grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/6.png" />
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-2 left grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/3.png" />
+                      <img src="/img/detail/sample_days/4.png" />
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">10:15 - 11 am</p>
+                        </div>
+                        <div class="title">
+                          <h3>Camper's Choice</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">Archery or Music</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
+                </div>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-1 right grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/5.png" />
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">11:15 - 12 pm</p>
+                        </div>
+                        <div class="title">
+                          <h3>Swim Lessons</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">
+                            Venenatis mi rutrum. Sem et faucibus cursus commodo
+                            varius.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-1 left grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/6.png" />
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">12 - 12:30 pm</p>
+                        </div>
+                        <div class="title">
+                          <h3>Lunch</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">
+                            Venenatis mi rutrum. Sem et faucibus cursus commodo
+                            varius.
+                          </p>
+                        </div>
+                        <div class="link">
+                          <a class="text-link" href="#">See food menus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="no-pic grid-x">
+                    <div class="small-12 medium-12 large-7 text-center">
                       <div class="time">
-                        <p class="eyebrow">12 - 12:30 pm</p>
+                        <p class="eyebrow">12:30 – 1 pm</p>
                       </div>
                       <div class="title">
-                        <h3>Lunch</h3>
+                        <h3>Rest</h3>
                       </div>
-                      <div class="main">
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
                         <p class="M">
                           Venenatis mi rutrum. Sem et faucibus cursus commodo
                           varius.
                         </p>
                       </div>
-                      <div class="link">
-                        <a class="text-link" href="#">See food menus</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-2 left grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/7.png" />
+                      <img src="/img/detail/sample_days/8.png" />
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">1 - 1:45 pm</p>
+                        </div>
+                        <div class="title">
+                          <h3>Camper's Choice</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">Playground or Design Lab</p>
+                        </div>
+                        <div class="link">
+                          <a class="text-link" href="#"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="no-pic grid-x">
-                  <div class="small-12 medium-12 large-7 text-center">
-                    <div class="time">
-                      <p class="eyebrow">12:30 – 1 pm</p>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-2 right grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/9.png" />
+                      <img src="/img/detail/sample_days/10.png" />
                     </div>
-                    <div class="title">
-                      <h3>Rest</h3>
-                    </div>
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <p class="M">
-                        Venenatis mi rutrum. Sem et faucibus cursus commodo
-                        varius.
-                      </p>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">1:55 - 2:40 pm</p>
+                        </div>
+                        <div class="title">
+                          <h3>Camper's Choice</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">Art or Gymnastics</p>
+                        </div>
+                        <div class="link">
+                          <a class="text-link" href="#"></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-2 left grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/7.png" />
-                    <img src="/img/detail/sample_days/8.png" />
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="pic-2 left grid-x">
+                    <div
+                      class="small-12 medium-12 large-7 text-center pic-body"
+                    >
+                      <img src="/img/detail/sample_days/11.png" />
+                      <img src="/img/detail/sample_days/12.png" />
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <div class="time">
+                          <p class="eyebrow">2:50 - 3:45 pm</p>
+                        </div>
+                        <div class="title">
+                          <h3>Camper's Choice</h3>
+                        </div>
+                        <div class="main">
+                          <p class="M">Free Swim or Climbing Wall</p>
+                        </div>
+                        <div class="link">
+                          <a class="text-link" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
+                </div>
+              </article>
+              <article class="story-telling-block">
+                <div class="wrapper">
+                  <div class="no-pic grid-x">
+                    <div class="small-12 medium-12 large-7 text-center">
                       <div class="time">
-                        <p class="eyebrow">1 - 1:45 pm</p>
+                        <p class="eyebrow">3:45 - 4 pm</p>
                       </div>
                       <div class="title">
-                        <h3>Camper's Choice</h3>
+                        <h3>Pickup</h3>
                       </div>
-                      <div class="main">
-                        <p class="M">Playground or Design Lab</p>
-                      </div>
-                      <div class="link">
-                        <a class="text-link" href="#"></a>
+                    </div>
+                    <div class="small-12 medium-12 large-5 d-center">
+                      <div class="description text-center">
+                        <a class="text-link" href="#"
+                          >See transportation options</a
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-2 right grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/9.png" />
-                    <img src="/img/detail/sample_days/10.png" />
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <div class="time">
-                        <p class="eyebrow">1:55 - 2:40 pm</p>
-                      </div>
-                      <div class="title">
-                        <h3>Camper's Choice</h3>
-                      </div>
-                      <div class="main">
-                        <p class="M">Art or Gymnastics</p>
-                      </div>
-                      <div class="link">
-                        <a class="text-link" href="#"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="pic-2 left grid-x">
-                  <div class="small-12 medium-12 large-7 text-center pic-body">
-                    <img src="/img/detail/sample_days/11.png" />
-                    <img src="/img/detail/sample_days/12.png" />
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <div class="time">
-                        <p class="eyebrow">2:50 - 3:45 pm</p>
-                      </div>
-                      <div class="title">
-                        <h3>Camper's Choice</h3>
-                      </div>
-                      <div class="main">
-                        <p class="M">Free Swim or Climbing Wall</p>
-                      </div>
-                      <div class="link">
-                        <a class="text-link" href="#"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="story-telling-block">
-              <div class="wrapper">
-                <div class="no-pic grid-x">
-                  <div class="small-12 medium-12 large-7 text-center">
-                    <div class="time">
-                      <p class="eyebrow">3:45 - 4 pm</p>
-                    </div>
-                    <div class="title">
-                      <h3>Pickup</h3>
-                    </div>
-                  </div>
-                  <div class="small-12 medium-12 large-5 d-center">
-                    <div class="description text-center">
-                      <a class="text-link" href="#"
-                        >See transportation options</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -522,7 +554,10 @@
               </div>
               <div class="content">
                 <div class="grid-x grid-margin-x">
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -533,8 +568,11 @@
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -545,8 +583,11 @@
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -554,8 +595,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -566,8 +610,11 @@
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -575,8 +622,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -584,8 +634,11 @@
                         <p class="XS">Basketball, handball, and more!</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -593,8 +646,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/8.png" />
                     <div class="card-body d-center">
                       <div>
@@ -602,8 +658,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/sport_game/9.png" />
                     <div class="card-body d-center">
                       <div>
@@ -611,7 +670,7 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
@@ -621,7 +680,10 @@
               </div>
               <div class="content">
                 <div class="grid-x grid-margin-x">
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -629,8 +691,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -638,8 +703,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -647,8 +715,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -656,8 +727,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -665,8 +739,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -674,8 +751,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -683,8 +763,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/performing_art/8.png" />
                     <div class="card-body d-center">
                       <div>
@@ -692,7 +775,7 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
@@ -702,7 +785,10 @@
               </div>
               <div class="content">
                 <div class="grid-x grid-margin-x">
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/challenge/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -710,8 +796,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/challenge/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -719,8 +808,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/challenge/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -728,7 +820,7 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
@@ -738,7 +830,10 @@
               </div>
               <div class="content">
                 <div class="grid-x grid-margin-x">
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/1.png" />
                     <div class="card-body d-center">
                       <div>
@@ -746,8 +841,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/2.png" />
                     <div class="card-body d-center">
                       <div>
@@ -758,8 +856,11 @@
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/3.png" />
                     <div class="card-body d-center">
                       <div>
@@ -767,8 +868,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/4.png" />
                     <div class="card-body d-center">
                       <div>
@@ -776,8 +880,11 @@
                         <p class="XS">Explore, create, design, build</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/5.png" />
                     <div class="card-body d-center">
                       <div>
@@ -785,8 +892,11 @@
                         <p class="XS">Natural playground</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/6.png" />
                     <div class="card-body d-center">
                       <div>
@@ -794,8 +904,11 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="cell card text-center small-12 medium-6 large-3">
+                  </a>
+                  <a
+                    href="#"
+                    class="cell card text-center small-12 medium-6 large-3"
+                  >
                     <img src="/img/detail/activities/other/7.png" />
                     <div class="card-body d-center">
                       <div>
@@ -803,54 +916,60 @@
                         <p class="XS"></p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
         </div>
       </section>
-      <section class="learn-more-info margin-top-3">
+      <section class="margin-top-3">
         <div class="wrapper">
-          <div class="row grid-x">
-            <div class="cell large-6 left-panel">
-              <div class="panel">
-                <div class="title">
-                  <h2>Extended Day</h2>
-                </div>
-                <div class="detail margin-top-2">
-                  <p class="M">
-                    Want more camp? You've got it. Our weekly Extended Day
-                    programs are available to all Middle Campers for an
-                    additional fee.
-                  </p>
-                  <p class="M">
-                    7:30-8:30 am - Drop off your camper up to an hour earlier
-                    than the regular drop-off at 8:30 am.
-                  </p>
-                  <p class="M">
-                    4:00-6:00 pm - Extend your camper's day as late as possible
-                    to give them full access to more activities.
-                  </p>
-                </div>
-                <div class="detail-button margin-top-2">
-                  <button class="button">Learn more about Extended Day</button>
+          <div class="learn-more-info">
+            <div class="row grid-x">
+              <div class="cell large-6 left-panel">
+                <div class="panel">
+                  <div class="title">
+                    <h2>Extended Day</h2>
+                  </div>
+                  <div class="detail margin-top-2">
+                    <p class="M">
+                      Want more camp? You've got it. Our weekly Extended Day
+                      programs are available to all Middle Campers for an
+                      additional fee.
+                    </p>
+                    <p class="M">
+                      7:30-8:30 am - Drop off your camper up to an hour earlier
+                      than the regular drop-off at 8:30 am.
+                    </p>
+                    <p class="M">
+                      4:00-6:00 pm - Extend your camper's day as late as
+                      possible to give them full access to more activities.
+                    </p>
+                  </div>
+                  <div class="detail-button margin-top-2">
+                    <button class="button" onclick="window.location.href='#'">
+                      Learn more about Extended Day
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="cell large-6 right-panel">
-              <div class="panel">
-                <div class="title">
-                  <h2>Transportation Options</h2>
-                </div>
-                <div class="detail margin-top-2">
-                  <p class="M">
-                    Why not let someone else be the driver? We'll safely shuttle
-                    your camper to and from Beaver by bus.
-                  </p>
-                </div>
-                <div class="detail-button margin-top-2">
-                  <button class="button">Learn more about Transporation</button>
+              <div class="cell large-6 right-panel">
+                <div class="panel">
+                  <div class="title">
+                    <h2>Transportation Options</h2>
+                  </div>
+                  <div class="detail margin-top-2">
+                    <p class="M">
+                      Why not let someone else be the driver? We'll safely
+                      shuttle your camper to and from Beaver by bus.
+                    </p>
+                  </div>
+                  <div class="detail-button margin-top-2">
+                    <button class="button" onclick="window.location.href='#'">
+                      Learn more about Transporation
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -917,71 +1036,73 @@
           </div>
         </div>
       </section>
-      <section class="electives-directors">
+      <section>
         <div class="wrapper">
-          <div class="panel">
-            <article>
-              <div class="header">
-                <h2>All Electives</h2>
-              </div>
-              <div class="detail">
-                <p class="M">
-                  Lorem ipsum dolor sit amet consectetur. Facilisis neque
-                  tincidunt id id. At et non gravida at. Ultrices tristique orci
-                  odio etiam nunc mauris porttitor mi. Elementum tempus
-                  vestibulum at pellentesque vestibulum mi in. Volutpat donec id
-                  pharetra volutpat posuere gravida tempus risus eu. Dui aliquam
-                  consectetur pellentesque viverra sagittis ullamcorper tempor
-                  nunc vivamus. Non vitae nisl viverra justo porta luctus.
-                  Volutpat vulputate platea elementum fringilla cras sed
-                  sagittis. Nisl dignissim faucibus lacinia vel. Arcu ipsum
-                  faucibus pretium hendrerit et vitae elementum vel curabitur.
-                  Interdum velit nunc magna nibh nulla ridiculus massa dui.
-                  Fermentum.
-                </p>
-              </div>
-              <div class="take-back">
-                <a class="text-link">Take me back</a>
-              </div>
-            </article>
-          </div>
-          <div class="panel">
-            <div class="wrapper grid-x grid-margin-x">
-              <div class="cell large-6">
-                <article class="director-panel">
-                  <div class="pic text-center">
-                    <img src="/img/detail/directors/1.png" />
-                  </div>
-                  <div class="detail text-center">
-                    <h3>Lorem ipsum</h3>
-                    <p class="M">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat duis
-                      felis integer tortor sed tellus fames sit. Nullam aenean
-                      et penatibus senectus ut pretium scelerisque faucibus.
-                      Purus sed lectus at elit turpis eget vel blandit morbi.
-                      Risus ornare libero magna placerat ultricies. Sed enim
-                      rutrum enim pulvinar vulputate tellus fermentum.
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <div class="cell large-6">
-                <article class="director-panel">
-                  <div class="pic text-center">
-                    <img src="/img/detail/directors/1.png" />
-                  </div>
-                  <div class="detail text-center">
-                    <h3>Lorem ipsum</h3>
-                    <p class="M">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat duis
-                      felis integer tortor sed tellus fames sit. Nullam aenean
-                      et penatibus senectus ut pretium scelerisque faucibus.
-                      Purus sed lectus at elit turpis eget vel blandit morbi.
-                      Risus ornare libero magna placerat ultricies. Sed enim
-                      rutrum enim pulvinar vulputate tellus fermentum.
-                    </p>
-                  </div>
-                </article>
+          <div class="electives-directors">
+            <div class="panel">
+              <article>
+                <div class="header">
+                  <h2>All Electives</h2>
+                </div>
+                <div class="detail">
+                  <p class="M">
+                    Lorem ipsum dolor sit amet consectetur. Facilisis neque
+                    tincidunt id id. At et non gravida at. Ultrices tristique
+                    orci odio etiam nunc mauris porttitor mi. Elementum tempus
+                    vestibulum at pellentesque vestibulum mi in. Volutpat donec
+                    id pharetra volutpat posuere gravida tempus risus eu. Dui
+                    aliquam consectetur pellentesque viverra sagittis
+                    ullamcorper tempor nunc vivamus. Non vitae nisl viverra
+                    justo porta luctus. Volutpat vulputate platea elementum
+                    fringilla cras sed sagittis. Nisl dignissim faucibus lacinia
+                    vel. Arcu ipsum faucibus pretium hendrerit et vitae
+                    elementum vel curabitur. Interdum velit nunc magna nibh
+                    nulla ridiculus massa dui. Fermentum.
+                  </p>
+                </div>
+                <div class="take-back">
+                  <a class="text-link">Take me back</a>
+                </div>
+              </article>
+            </div>
+            <div class="panel">
+              <div class="wrapper grid-x grid-margin-x">
+                <div class="cell large-6">
+                  <article class="director-panel">
+                    <div class="pic text-center">
+                      <img src="/img/detail/directors/1.png" />
+                    </div>
+                    <div class="detail text-center">
+                      <h3>Lorem ipsum</h3>
+                      <p class="M">
+                        Lorem ipsum dolor sit amet consectetur. Volutpat duis
+                        felis integer tortor sed tellus fames sit. Nullam aenean
+                        et penatibus senectus ut pretium scelerisque faucibus.
+                        Purus sed lectus at elit turpis eget vel blandit morbi.
+                        Risus ornare libero magna placerat ultricies. Sed enim
+                        rutrum enim pulvinar vulputate tellus fermentum.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="cell large-6">
+                  <article class="director-panel">
+                    <div class="pic text-center">
+                      <img src="/img/detail/directors/1.png" />
+                    </div>
+                    <div class="detail text-center">
+                      <h3>Lorem ipsum</h3>
+                      <p class="M">
+                        Lorem ipsum dolor sit amet consectetur. Volutpat duis
+                        felis integer tortor sed tellus fames sit. Nullam aenean
+                        et penatibus senectus ut pretium scelerisque faucibus.
+                        Purus sed lectus at elit turpis eget vel blandit morbi.
+                        Risus ornare libero magna placerat ultricies. Sed enim
+                        rutrum enim pulvinar vulputate tellus fermentum.
+                      </p>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
@@ -994,7 +1115,7 @@
           </div>
           <div class="content">
             <div class="grid-x grid-margin-x">
-              <div class="cell card text-center large-4">
+              <a href="#" class="cell card text-center large-4">
                 <img src="/img/detail/relative_programs/1.png" />
                 <div class="card-body d-center">
                   <div>
@@ -1002,8 +1123,8 @@
                     <p class="eyebrow">Grades 1 & 2</p>
                   </div>
                 </div>
-              </div>
-              <div class="cell card text-center large-4">
+              </a>
+              <a href="#" class="cell card text-center large-4">
                 <img src="/img/detail/relative_programs/2.png" />
                 <div class="card-body d-center">
                   <div>
@@ -1011,8 +1132,8 @@
                     <p class="eyebrow">Grades 1 & 2</p>
                   </div>
                 </div>
-              </div>
-              <div class="cell card text-center large-4">
+              </a>
+              <a href="#" class="cell card text-center large-4">
                 <img src="/img/detail/relative_programs/3.png" />
                 <div class="card-body d-center">
                   <div>
@@ -1020,72 +1141,85 @@
                     <p class="eyebrow">Grades 1 & 2</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer>
       <div class="wrapper">
-        <div class="footer-top grid-x">
-          <div class="footer-left large-4">
-            <img src="/img/logo_white.png" />
-            <p class="S small-12 medium-12 large-3">
-              Eleifend semper nec ullamcorper ornare vitae sed ipsum est. Risus
-              sed odio eleifend adipiscing et aliquam. Habitasse diam sagittis
-              erat sed dictum. Facilisis quis sollicitudin facilisi amet ut.
-            </p>
-            <a class="small-12 medium-12 large-3 highlight" href="#">
-              <span>Learn more about</span>
-              <span>Beaver Camp</span>
-            </a>
-          </div>
-          <div class="footer-right large-8">
-            <div class="link-btn order-3">
-              <a href="#">Beaver Country Day School</a>
-              <a href="#">CampBrain</a>
+        <div class="footer">
+          <div class="footer-top grid-x">
+            <div class="footer-left large-4">
+              <img src="/img/logo_white.png" />
+              <p class="S medium-3">
+                Eleifend semper nec ullamcorper ornare vitae sed ipsum est.
+                Risus sed odio eleifend adipiscing et aliquam. Habitasse diam
+                sagittis erat sed dictum. Facilisis quis sollicitudin facilisi
+                amet ut.
+              </p>
+              <a class="medium-3 highlight" href="#">
+                <span>Learn more about</span>
+                <span>Beaver Camp</span>
+              </a>
             </div>
-            <div class="link-btn order-1">
-              <button class="button orange">See Dates & Rates</button>
-              <button class="button yellow">Request Info</button>
-            </div>
-            <div class="link-group grid-x order-2">
-              <div class="link-list large-4">
-                <h4>Quick Links</h4>
-                <a href="#">All Programs</a>
-                <a href="#">How to Register</a>
-                <a href="#">Camp Information</a>
-                <a href="#">Work at Camp</a>
-                <a href="#">Contact Us</a>
+            <div class="footer-right large-8">
+              <div class="link-btn order-3">
+                <a href="#">Beaver Country Day School</a>
+                <a href="#">CampBrain</a>
               </div>
-              <div class="link-list large-4">
-                <h4>General Camp</h4>
-                <a href="#">Lower Camp (PreK-K)</a>
-                <a href="#">Middle Camp</a>
-                <a href="#">Upper Camp</a>
-                <a href="#">Senior Camp</a>
+              <div class="link-btn order-1">
+                <button
+                  class="button orange"
+                  onclick="window.location.href='#'"
+                >
+                  See Dates & Rates
+                </button>
+                <button
+                  class="button yellow"
+                  onclick="window.location.href='#'"
+                >
+                  Request Info
+                </button>
               </div>
-              <div class="link-list large-4">
-                <h4>Follow Us</h4>
-                <div>
-                  <img href="#" src="/img/instagram.png" />
-                  <img href="#" src="/img/smugmug.png" />
+              <div class="link-group grid-x order-2">
+                <div class="link-list large-4">
+                  <h4>Quick Links</h4>
+                  <a href="#">All Programs</a>
+                  <a href="#">How to Register</a>
+                  <a href="#">Camp Information</a>
+                  <a href="#">Work at Camp</a>
+                  <a href="#">Contact Us</a>
+                </div>
+                <div class="link-list large-4">
+                  <h4>General Camp</h4>
+                  <a href="#">Lower Camp (PreK-K)</a>
+                  <a href="#">Middle Camp</a>
+                  <a href="#">Upper Camp</a>
+                  <a href="#">Senior Camp</a>
+                </div>
+                <div class="link-list large-4">
+                  <h4>Follow Us</h4>
+                  <div>
+                    <img href="#" src="/img/instagram.png" />
+                    <img href="#" src="/img/smugmug.png" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="reserved">
-            <label class="copyright"
-              >© Beaver Summer Camp. All rights reserved.</label
-            >
-          </div>
-          <div class="logo-group">
-            <img src="/img/logo1-1.png" />
-            <img src="/img/logo2-1.png" />
+          <div class="footer-bottom">
+            <div class="reserved">
+              <label class="copyright"
+                >© Beaver Summer Camp. All rights reserved.</label
+              >
+            </div>
+            <div class="logo-group">
+              <img src="/img/logo1-1.png" />
+              <img src="/img/logo2-1.png" />
+            </div>
           </div>
         </div>
       </div>

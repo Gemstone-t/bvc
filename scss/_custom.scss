@@ -30,6 +30,16 @@ body {
     .card{
         border: none;
     }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    button:hover,
+    .button:hover,
+    a:hover{
+        opacity: 0.8;
+    }
     
     a.text-link, a.nav-link, a.utility-nav, a, label, select, text{
         font-family: Satoshi-Bold, sans-serif;
@@ -178,7 +188,6 @@ body {
         flex-direction: row-reverse;
         a {
             color: $beaverWhite;
-            text-decoration: underline;
             padding-left: 30px;
         }
     }
@@ -243,7 +252,8 @@ body {
                     position: absolute; 
                     top: 55px; 
                 }
-                li:hover > ul {
+                li:hover > ul,
+                li:focus-within > ul {
                     display:inherit;
                     list-style-type: none;
                     margin: 0;
@@ -327,7 +337,6 @@ body {
         #chk-search{ display: none;}
         #chk-search:checked + div {
             display: flex;
-            flex-direction: row-reverse;
         }
     }
     
@@ -728,6 +737,7 @@ body {
         .jump-to{
             display: flex;
             justify-content: space-between;
+            list-style: none;
             a{
                 color: $beaverBlue;
             }
@@ -1223,6 +1233,11 @@ body {
             font-size: rem-calc(18px);
             line-height: rem-calc(24px);
         }
+
+        p.S{
+            font-size: rem-calc(18px);
+            line-height: rem-calc(27px);
+        }
         
         button, .button{
             font-size: rem-calc(18px);
@@ -1256,6 +1271,9 @@ body {
         
         .highlight{
             display: inline;
+        }
+        input{
+            font-size: rem-calc(16px);
         }
 
         
@@ -1501,13 +1519,22 @@ body {
                 align-items: flex-start;
                 .link-group{
                     flex-direction: column;
+                    .link-list a {
+                        font-size: rem-calc(17px);
+                        line-height: rem-calc(20px);
+                    }
                 }
+                
                 .link-btn{
                     display: flex !important;
                     flex-direction: column;
                     align-items: flex-start;
                     button{margin: 10px 0; }
-                    a{margin: 20px 0 5px 0;}
+                    a{
+                        margin: 20px 0 5px 0;
+                        font-size: rem-calc(15px);
+                        line-height: 100%;
+                    }
                 }
     
             }
@@ -1524,6 +1551,9 @@ body {
                 .reserved{
                     margin-top: 20px;
                 }
+            }
+            label.copyright{
+                font-size: rem-calc(14px);
             }
         }
         ////detail-page

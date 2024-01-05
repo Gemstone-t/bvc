@@ -21,13 +21,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="utility-menu">
-        <a class="utility-nav" href="#">CampBrain</a>
-        <a class="utility-nav" href="#">Beaver Country Day School</a>
-        <a class="utility-nav" href="#">Request Info</a>
+      <div class="wrapper">
+        <div class="utility-menu">
+          <div>
+            <a class="utility-nav" href="#">Request Info</a>
+            <a class="utility-nav" href="#">Beaver Country Day School</a>
+            <a class="utility-nav" href="#">CampBrain</a>
+          </div>
+        </div>
       </div>
-      <nav class="nav-tool-bar">
-        <div class="nav-bar wrapper">
+      <nav class="nav-tool-bar wrapper">
+        <div class="nav-bar">
           <div class="nav-home">
             <div class="mobile-header">
               <div id="logo">
@@ -42,10 +46,16 @@
               <input type="checkbox" id="drop" />
               <ul class="menu">
                 <li>
-                  <label for="drop-1" class="toggle"
-                    >Programs
-                    <i class="bi bi-chevron-down bi-bold pull-right"></i
-                  ></label>
+                  <label
+                    for="drop-1"
+                    class="toggle"
+                    aria-controls="submenu-about"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    Programs
+                    <i class="bi bi-chevron-down bi-bold pull-right"></i>
+                  </label>
                   <a class="nav-link" href="#"
                     >Programs <i class="bi bi-chevron-down bi-bold"></i
                   ></a>
@@ -124,7 +134,7 @@
               </ul>
             </div>
           </div>
-          <div class="search-bar text-right">
+          <div class="search-bar text-right" tabindex="0">
             <label class="search-icon d-center" for="chk-search">
               <i class="bi bi-search"></i>
             </label>
@@ -133,13 +143,13 @@
         <div class="search-line">
           <input type="checkbox" id="chk-search" />
           <div class="search-input">
-            <button class="button d-center">Go</button>
             <input
               placeholder="Enter Search"
               class="medium-3"
               name="search-key"
               id="search-key"
             />
+            <button class="button d-center">Go</button>
           </div>
         </div>
       </nav>
@@ -223,7 +233,7 @@
               website.
             </h5>
             <div class="margin-top-2">
-              <button class="button">Call to Action</button>
+              <button class="button" onclick="window.location.href='#'">Call to Action</button>
             </div>
           </article>
           <article class="margin-top-2">
@@ -352,534 +362,541 @@
           </div>
         </div>
       </section>
-      <section class="summer_leadership margin-top-3">
-        <div class="wrapper grid-x">
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/1.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Jill David</h3>
-                <p class="eyebrow">Lower Camp Director</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/2.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/3.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="cell card small-12 medium-6 large-3">
-            <img src="/img/basic/leadership/4.png" />
-            <div class="card-body d-center">
-              <div>
-                <h3>Staff Member</h3>
-                <p class="eyebrow">Staff Title</p>
-                <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
-                <p class="XS"><b>Summers at Beaver:</b> 15</p>
-                <p class="XS">
-                  <b>While I am not working at Beaver <br />I:</b> am
-                  teaching Pre-K at BEEP.
-                </p>
-                <p class="XS">
-                  <b>If I were a superhero, my superpower would be:</b> flying.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact_us margin-top-3 margin-bottom-3">
+      <section class="margin-top-3">
         <div class="wrapper">
-          <form class="contact_us-form">
-            <h2>Contact Us</h2>
-            <p class="S margin-top-2">
-              Diam quis porttitor platea pharetra eget hac diam amet tortor.
-              Molestie consectetur lectus at cursus libero. Nullam nunc mauris
-              fringilla.
-            </p>
-            <div class="form-group">
-              <p class="eyebrow" for="name">Name*</p>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group margin-top-1">
-              <p class="eyebrow" for="email">Email*</p>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group margin-top-1">
-              <p class="eyebrow" for="message">Message*</p>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="button">Submit</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer-top grid-x">
-          <div class="footer-left large-4">
-            <img src="/img/logo_white.png" />
-            <p class="S medium-3">
-              Eleifend semper nec ullamcorper ornare vitae sed ipsum est. Risus
-              sed odio eleifend adipiscing et aliquam. Habitasse diam sagittis
-              erat sed dictum. Facilisis quis sollicitudin facilisi amet ut.
-            </p>
-            <a class="medium-3 highlight" href="#">
-              <span>Learn more about</span>
-              <span>Beaver Camp</span>
-            </a>
-          </div>
-          <div class="footer-right large-8">
-            <div class="link-btn order-3">
-              <a href="#">Beaver Country Day School</a>
-              <a href="#">CampBrain</a>
-            </div>
-            <div class="link-btn order-1">
-              <button class="button orange">See Dates & Rates</button>
-              <button class="button yellow">Request Info</button>
-            </div>
-            <div class="link-group grid-x order-2">
-              <div class="link-list large-4">
-                <h4>Quick Links</h4>
-                <a href="#">All Programs</a>
-                <a href="#">How to Register</a>
-                <a href="#">Camp Information</a>
-                <a href="#">Work at Camp</a>
-                <a href="#">Contact Us</a>
-              </div>
-              <div class="link-list large-4">
-                <h4>General Camp</h4>
-                <a href="#">Lower Camp (PreK-K)</a>
-                <a href="#">Middle Camp</a>
-                <a href="#">Upper Camp</a>
-                <a href="#">Senior Camp</a>
-              </div>
-              <div class="link-list large-4">
-                <h4>Follow Us</h4>
+          <div class="summer_leadership grid-x">
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
                 <div>
-                  <img href="#" src="/img/instagram.png" />
-                  <img href="#" src="/img/smugmug.png" />
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/1.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Jill David</h3>
+                  <p class="eyebrow">Lower Camp Director</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/2.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/3.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell card small-12 medium-6 large-3">
+              <img src="/img/basic/leadership/4.png" />
+              <div class="card-body d-center">
+                <div>
+                  <h3>Staff Member</h3>
+                  <p class="eyebrow">Staff Title</p>
+                  <p class="XS"><b>Pronouns:</b> pronoun/pronoun</p>
+                  <p class="XS"><b>Summers at Beaver:</b> 15</p>
+                  <p class="XS">
+                    <b>While I am not working at Beaver <br />I:</b> am
+                    teaching Pre-K at BEEP.
+                  </p>
+                  <p class="XS">
+                    <b>If I were a superhero, my superpower would be:</b> flying.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="reserved">
-            <label class="copyright"
-              >© Beaver Summer Camp. All rights reserved.</label
-            >
+      </section>
+      <section class="margin-top-3 margin-bottom-3">
+        <div class="wrapper">
+          <div class="contact_us">
+            <form class="contact_us-form">
+              <h2>Contact Us</h2>
+              <p class="S margin-top-2">
+                Diam quis porttitor platea pharetra eget hac diam amet tortor.
+                Molestie consectetur lectus at cursus libero. Nullam nunc mauris
+                fringilla.
+              </p>
+              <div class="form-group">
+                <p class="eyebrow" for="name">Name*</p>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group margin-top-1">
+                <p class="eyebrow" for="email">Email*</p>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group margin-top-1">
+                <p class="eyebrow" for="message">Message*</p>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="button">Submit</button>
+              </div>
+            </form>
           </div>
-          <div class="logo-group">
-            <img src="/img/logo1-1.png" />
-            <img src="/img/logo2-1.png" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer-top grid-x">
+            <div class="footer-left large-4">
+              <img src="/img/logo_white.png" />
+              <p class="S medium-3">
+                Eleifend semper nec ullamcorper ornare vitae sed ipsum est.
+                Risus sed odio eleifend adipiscing et aliquam. Habitasse diam
+                sagittis erat sed dictum. Facilisis quis sollicitudin facilisi
+                amet ut.
+              </p>
+              <a class="medium-3 highlight" href="#">
+                <span>Learn more about</span>
+                <span>Beaver Camp</span>
+              </a>
+            </div>
+            <div class="footer-right large-8">
+              <div class="link-btn order-3">
+                <a href="#">Beaver Country Day School</a>
+                <a href="#">CampBrain</a>
+              </div>
+              <div class="link-btn order-1">
+                <button class="button orange" onclick="window.location.href='#'">See Dates & Rates</button>
+                <button class="button yellow" onclick="window.location.href='#'">Request Info</button>
+              </div>
+              <div class="link-group grid-x order-2">
+                <div class="link-list large-4">
+                  <h4>Quick Links</h4>
+                  <a href="#">All Programs</a>
+                  <a href="#">How to Register</a>
+                  <a href="#">Camp Information</a>
+                  <a href="#">Work at Camp</a>
+                  <a href="#">Contact Us</a>
+                </div>
+                <div class="link-list large-4">
+                  <h4>General Camp</h4>
+                  <a href="#">Lower Camp (PreK-K)</a>
+                  <a href="#">Middle Camp</a>
+                  <a href="#">Upper Camp</a>
+                  <a href="#">Senior Camp</a>
+                </div>
+                <div class="link-list large-4">
+                  <h4>Follow Us</h4>
+                  <div>
+                    <img href="#" src="/img/instagram.png" />
+                    <img href="#" src="/img/smugmug.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="reserved">
+              <label class="copyright"
+                >© Beaver Summer Camp. All rights reserved.</label
+              >
+            </div>
+            <div class="logo-group">
+              <img src="/img/logo1-1.png" />
+              <img src="/img/logo2-1.png" />
+            </div>
           </div>
         </div>
       </div>
