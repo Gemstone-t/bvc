@@ -34,3 +34,12 @@ newLocal = $('.search-bar')[0].addEventListener('keydown', function (event) {
     $('#chk-search')[0].checked = !$('#chk-search')[0].checked
   }
 })
+
+const nav_menu = document.querySelectorAll('.menu > li')
+
+nav_menu.forEach(function (item, index) {
+  item.addEventListener('mouseover', function (e) {
+    var subitem = item.getElementsByClassName('nav-link')
+    subitem[0].focus()
+  })
+})
