@@ -12,6 +12,7 @@ body {
     font-weight: 700;
     font-size: rem-calc(20px);
     line-height: 100%;
+    max-width: 1920px;
 
     img {
         max-width: 100vw !important;
@@ -1741,7 +1742,155 @@ body {
             }
         }
     }
+
+    @media screen and (min-width: 1920px) {
+        width: 1920px;
+        margin: 0 auto;
+        h1{
+            font-size: calc(1920px / 1400px * 54px);
+            line-height: calc(1920px / 1400px * 60px);
+        }        
+        h2{
+            font-size: calc(1920px / 1400px * 46px);
+            line-height: calc(1920px / 1400px * 48px);
+        }  
+        h2.alt{
+            font-size: calc(1920px / 1400px * 46px);
+            line-height: calc(1920px / 1400px * 50px);
+        }    
+        h3{
+            font-size: calc(1920px / 1400px * 30px);
+            line-height: calc(1920px / 1400px * 32px);
+        }  
+        h3.alt{
+            font-size: calc(1920px / 1400px * 35px);
+            line-height: calc(1920px / 1400px * 35px);
+        }
+        h4{
+            font-size: calc(1920px / 1400px * 23px);
+            line-height: calc(1920px / 1400px * 24px);
+        }    
+        h5{
+            font-size: calc(1920px / 1400px * 19px);
+            line-height: calc(1920px / 1400px * 21px);
+        }
+        a.nav-link{
+            font-size: calc(1920px / 1400px * 20px);
+            line-height: calc(1920px / 1400px * 25px);
+            text-decoration: none;
+        }
+        a.utility-nav{
+            font-size: calc(1920px / 1400px * 15px);
+            line-height: 100%;
+            text-decoration: underline;
+        }
+        p.eyebrow{
+            font-size: calc(1920px / 1400px * 22px);
+            line-height: calc(1920px / 1400px * 22px);
+        }
+        button,
+        .button{
+            font-family: Satoshi-Black, sans-serif;
+            font-weight: 900;
+            font-size: calc(1920px / 1400px * 20px);
+            line-height: 100%;
+            margin: 0;
+        }
+        p.XXL{
+            font-size: calc(1920px / 1400px * 50px);
+            line-height: calc(1920px / 1400px * 65px);
+        }
+        p.XL {
+            font-size: calc(1920px / 1400px * 26px);
+            line-height: calc(1920px / 1400px * 32px);
+        }
+        p.L{
+            font-size: calc(1920px / 1400px * 24px);
+            line-height: calc(1920px / 1400px * 35px);
+        }
+        p.M,
+        a {
+            font-size: calc(1920px / 1400px * 20px);
+            line-height: calc(1920px / 1400px * 27px);
+        }
+        p.S{
+            font-size: calc(1920px / 1400px * 18px);
+            line-height: calc(1920px / 1400px * 27px);
+        }
+        p.XS{
+            font-size: calc(1920px / 1400px * 16px);
+            line-height: calc(1920px / 1400px * 19px);
+        }
+        p.call-out{
+            font-size: calc(1920px / 1400px * 39px);
+            line-height: calc(1920px / 1400px * 39px);
+        }
+        a.text-link{
+            font-size: calc(1920px / 1400px * 20px);
+            line-height: calc(1920px / 1400px * 27px);
+            text-decoration: underline;
+        }
+        select,
+        label,
+        input{
+            font-size: calc(1920px / 1400px * 20px);
+            line-height: 100%;
+        }
+        .nav-tool-bar .nav-home .menu ul li a{
+            font-size: calc(1920px / 1400px * 17px);
+            line-height: calc(1920px / 1400px * 25px);
+        }
+        .footer .footer-right .link-group .link-list a{
+            font-size: calc(1920px / 1400px * 17px);
+        }
+        .footer .footer-right .link-btn a {
+            font-size: calc(1920px / 1400px * 15px);
+        }
+        .footer label.copyright{
+            font-size: calc(1920px / 1400px * 14px);
+        }
+        .user-table th{
+            font-size: calc(1920px / 1400px * 18px);
+        }
+
+        .top-page .background img{
+            width: 1920px;
+        }
+        .detail-page .top-page .hero .prev-next-btn{
+            position: relative;
+            right: 0;
+            top: 745px;
+            left: 1550px;
+        }
+        .hero-content{
+            margin-top: 612px;
+        }
+        .landing-page .background{
+            right: calc((100vw - 1940px) / 2);
+            img{
+                width: 900px;
+                height: 900px;
+            }
+            
+        }
+        .landing-page .learn-more-info .panel-body {
+            height: calc(1920px * 500px / 1400px);
+        }
+        .indexing-page .main-content{
+            width: 1250px;
+        }
+        .basic-page .background{
+            right: calc((100vw - 1940px) / 2);
+            img{
+                width: 960px;
+            }
+        }
+        #gallery-slider .content img {
+            width: 1720px;
+        }
+    }
 }
+
 
 // button {
 //     margin: 0 !important;
