@@ -1,5 +1,5 @@
 {
-  "name": "BVR_Summer_Camp",
+  "name": "bvr-summer-camp",
   "version": "1.1.1",
   "main": "gulpfile.js",
   "scripts": {
@@ -29,7 +29,6 @@
     "postcss": "^8.4.28",
     "sass": "^1.66.0"
   },
-  "private": true,
   "browserslist": [
     "last 2 versions"
   ]
